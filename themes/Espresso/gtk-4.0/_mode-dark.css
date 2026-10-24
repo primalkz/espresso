@@ -1,0 +1,24 @@
+/* dark-only geometry */
+*:focus-visible {
+    outline-width: 3px;
+    outline-offset: 1px;
+}
+
+/* base theme focus rules outrank a bare * selector */
+entry:focus-within,
+entry.search:focus-within,
+spinbutton:focus-within:not(.vertical),
+button:focus:focus-visible,
+button.suggested-action:focus:focus-visible,
+button.destructive-action:focus:focus-visible,
+checkbutton:focus-visible,
+radiobutton:focus-visible,
+switch:focus-visible,
+scale:focus-visible,
+dropdown:focus-visible,
+combobox:focus-visible,
+menubutton:focus-visible,
+listview:focus-visible,
+treeview:focus-visible {
+    outline-width: 3px;
+}

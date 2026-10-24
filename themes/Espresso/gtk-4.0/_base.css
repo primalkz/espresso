@@ -1,0 +1,44 @@
+/* espresso base: aliases text selection and focus */
+
+window, dialog, .background {
+    background-color: @es_surface_base;
+    color: @es_ink_gray_8;
+}
+
+/* blue-7 passes 4.5:1 on white but blue-5 does not */
+*:link, button.link {
+    color: @es_surface_blue_7;
+}
+
+selection, *:selected {
+    background-color: @es_accent;
+    color: @es_accent_fg;
+}
+
+*:focus-visible {
+    outline-color: @es_focus;
+}
+
+label.dim-label, .dim-label {
+    color: @es_ink_gray_6;
+}
+
+separator {
+    background-color: @es_outline_gray_1;
+    min-width: 1px;
+    min-height: 1px;
+}
+
+tooltip {
+    background-color: @es_ink_gray_9;
+    color: @es_surface_base;
+    border: 1px solid alpha(@es_surface_base, 0.10);
+    border-radius: 6px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.14);
+}
+
+/* the base theme paints gradients on controls but espresso is flat */
+headerbar, .titlebar,
+button, entry, spinbutton, dropdown, menubutton {
+    background-image: none;
+}

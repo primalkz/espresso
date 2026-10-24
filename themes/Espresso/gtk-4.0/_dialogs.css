@@ -1,0 +1,178 @@
+/* dialogs pass: dialogs file chooser calendar views and infobar */
+
+dialog, window.dialog {
+    background-color: @es_surface_base;
+}
+
+window.dialog.message, messagedialog {
+    background-color: @es_surface_base;
+    border: 1px solid @es_outline_gray_1;
+    border-radius: 10px;
+    box-shadow: inset 0px 0.25px 1.5px 0px #ffffff29, 0px 0px 1px 0px #00000033, 0px 0px 10px 2px #0000000a, 0px 24px 30px -8px #0000001a;  /* elevation xl */
+}
+
+window.dialog.message .titlebar, messagedialog .titlebar {
+    background-color: transparent;
+    border-bottom: none;
+    box-shadow: none;
+}
+
+dialog .dialog-action-area, messagedialog .dialog-action-area {
+    border-top: 1px solid @es_outline_gray_1;
+    padding: 10px;
+    border-spacing: 8px;
+}
+
+/* file chooser */
+
+filechooser .dialog-action-box {
+    border-top: 1px solid @es_outline_gray_1;
+    padding: 10px;
+    border-spacing: 8px;
+}
+
+filechooser placessidebar {
+    background-color: @es_surface_sidebar;
+    border-right: 1px solid @es_outline_gray_1;
+}
+
+placessidebar row {
+    border-radius: 8px;
+    margin: 2px 8px;
+    padding: 6px 10px;
+}
+
+placessidebar row:hover {
+    background-color: @es_surface_gray_2;
+}
+
+placessidebar row:selected {
+    background-color: alpha(@es_accent, 0.14);
+    color: @es_ink_gray_8;
+    font-weight: 600;
+}
+
+placessidebar row:selected image {
+    color: @es_accent;
+}
+
+filechooser .view, filechooser listview {
+    background-color: @es_surface_base;
+}
+
+/* calendar */
+
+calendar {
+    background-color: @es_surface_elevation_1;
+    border: 1px solid @es_outline_gray_1;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+calendar > header {
+    border-bottom: 1px solid @es_outline_gray_1;
+    padding-bottom: 6px;
+    margin-bottom: 6px;
+}
+
+calendar > header > button {
+    min-height: 28px;
+    padding: 4px 8px;
+}
+
+calendar > grid > label.day-number {
+    padding: 4px;
+    border-radius: 100px;
+}
+
+calendar > grid > label.day-number:hover {
+    background-color: @es_surface_gray_3;
+}
+
+calendar > grid > label.day-number:selected {
+    background-color: transparent;
+    background-image: radial-gradient(circle closest-side, @es_accent 94%, transparent 100%);
+    border-radius: 100px;
+    color: @es_accent_fg;
+}
+
+calendar > grid > label.day-number.other-month {
+    color: @es_ink_gray_3;
+}
+
+calendar > grid > label.day-number.today {
+    box-shadow: none;
+    color: @es_accent;
+    font-weight: 600;
+}
+
+/* views */
+
+treeview.view, columnview, listview {
+    background-color: @es_surface_base;
+    color: @es_ink_gray_8;
+}
+
+treeview.view:selected, columnview:selected, listview > row:selected {
+    background-color: alpha(@es_accent, 0.12);
+    color: @es_ink_gray_8;
+}
+
+treeview.view header button, columnview > header > button {
+    background-color: @es_surface_gray_1;
+    border: none;
+    border-right: 1px solid @es_outline_gray_1;
+    border-bottom: 1px solid @es_outline_gray_1;
+    border-radius: 0;
+    padding: 6px 10px;
+    font-weight: 500;
+    box-shadow: none;
+}
+
+treeview.view header button:hover, columnview > header > button:hover {
+    background-color: @es_surface_gray_2;
+}
+
+/* infobar */
+
+infobar {
+    border-radius: 8px;
+    border: 1px solid @es_outline_gray_1;
+    padding: 8px;
+    background-color: @es_surface_gray_1;
+}
+
+infobar.info {
+    background-color: alpha(@es_accent, 0.10);
+    border-color: alpha(@es_accent, 0.30);
+}
+
+infobar.warning {
+    background-color: alpha(@es_warning, 0.12);
+    border-color: alpha(@es_warning, 0.35);
+}
+
+infobar.error {
+    background-color: alpha(@es_error, 0.12);
+    border-color: alpha(@es_error, 0.35);
+}
+
+infobar revealer > box {
+    border-spacing: 8px;
+}
+
+/* colorswatch and print preview stay native but flat */
+
+colorswatch {
+    border-radius: 6px;
+    border: 1px solid @es_outline_gray_2;
+}
+
+colorswatch:selected {
+    border-color: @es_accent;
+    box-shadow: 0 0 0 2px alpha(@es_accent, 0.35);
+}
+
+filechooser .sidebar-item, .sidebar-item {
+    border-radius: 8px;
+}

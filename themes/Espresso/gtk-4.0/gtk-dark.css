@@ -1,0 +1,7 @@
+@import url("resource:///org/gtk/libgtk/theme/Default/Default-dark.css");
+@import url("_mode-dark.css");
+@import url("_tokens-dark.css");
+@import url("_base.css");
+@import url("_controls.css");
+@import url("_surfaces.css");
+@import url("_dialogs.css");

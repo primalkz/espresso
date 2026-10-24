@@ -1,0 +1,567 @@
+/* controls: frappe-ui sm size. gtk min-height is the content box so padding stays 0 vertically */
+
+button,
+entry,
+spinbutton:not(.vertical),
+dropdown > button,
+combobox > box > button.combo,
+menubutton > button {
+    min-height: 28px;
+    padding: 0 8px;
+    border: none;
+    border-radius: 8px;
+    background-color: @es_surface_gray_2;
+    background-image: none;
+    box-shadow: none;
+    color: @es_ink_gray_8;
+    outline-offset: 1px;
+    transition: background-color 120ms ease, color 120ms ease;
+}
+
+/* the wrappers draw nothing and only their inner button does */
+dropdown,
+menubutton,
+combobox {
+    min-height: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+button:hover,
+entry:hover,
+spinbutton:hover,
+dropdown > button:hover,
+combobox > box > button.combo:hover,
+menubutton > button:hover {
+    background-color: @es_surface_gray_3;
+}
+
+button:active,
+button:checked,
+dropdown > button:checked,
+menubutton > button:checked {
+    background-color: @es_surface_gray_4;
+}
+
+button:disabled,
+entry:disabled,
+spinbutton:disabled,
+dropdown > button:disabled,
+menubutton > button:disabled {
+    background-color: @es_surface_gray_1;
+    color: @es_ink_gray_4;
+}
+
+button:focus-visible,
+dropdown > button:focus-visible,
+menubutton > button:focus-visible,
+entry:focus-within,
+spinbutton:focus-within {
+    outline: 2px solid @es_focus;
+}
+
+button > label,
+dropdown > button label,
+menubutton > button label {
+    font-weight: 500;
+}
+
+dropdown arrow,
+menubutton arrow,
+combobox arrow {
+    min-width: 16px;
+    min-height: 16px;
+    -gtk-icon-size: 16px;
+    color: @es_ink_gray_5;
+}
+
+dropdown > button > box,
+menubutton > button > box {
+    border-spacing: 6px;
+}
+
+button.image-button,
+menubutton > button.image-button {
+    min-width: 28px;
+    padding: 0;
+}
+
+button.circular {
+    min-width: 28px;
+    padding: 0;
+    border-radius: 100px;
+}
+
+button.pill {
+    padding: 0 16px;
+    border-radius: 100px;
+}
+
+/* ghost */
+button.flat,
+menubutton.flat > button {
+    background-color: transparent;
+}
+
+button.flat:hover,
+menubutton.flat > button:hover {
+    background-color: @es_surface_gray_3;
+}
+
+button.flat:active,
+button.flat:checked {
+    background-color: @es_surface_gray_4;
+}
+
+button.flat:disabled {
+    background-color: transparent;
+}
+
+/* solid gray is frappe's primary */
+button.suggested-action {
+    background-color: @es_surface_gray_10;
+    color: @es_ink_base;
+}
+
+button.suggested-action:hover {
+    background-color: @es_surface_gray_9;
+}
+
+button.suggested-action:active,
+button.suggested-action:checked {
+    background-color: @es_surface_gray_8;
+}
+
+button.destructive-action {
+    background-color: @es_destructive;
+    color: @es_destructive_fg;
+}
+
+button.destructive-action:hover,
+button.destructive-action:active {
+    background-color: @es_destructive_hover;
+}
+
+button.suggested-action:disabled,
+button.destructive-action:disabled {
+    background-color: @es_surface_gray_1;
+    color: @es_ink_gray_4;
+}
+
+button.suggested-action.flat,
+button.destructive-action.flat {
+    background-color: transparent;
+    color: @es_ink_gray_8;
+}
+
+button.destructive-action.flat {
+    color: @es_destructive;
+}
+
+button.suggested-action.flat:hover,
+button.destructive-action.flat:hover {
+    background-color: @es_surface_gray_3;
+}
+
+button.link {
+    background: none;
+    padding: 0;
+}
+
+.linked:not(.vertical) > button:not(:first-child),
+.linked:not(.vertical) > entry:not(:first-child),
+.linked:not(.vertical) > dropdown:not(:first-child) > button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.linked:not(.vertical) > button:not(:last-child),
+.linked:not(.vertical) > entry:not(:last-child),
+.linked:not(.vertical) > dropdown:not(:last-child) > button {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.linked.vertical > button:not(:first-child) {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.linked.vertical > button:not(:last-child) {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/* entries */
+entry {
+    caret-color: @es_ink_gray_8;
+}
+
+entry > image {
+    color: @es_ink_gray_5;
+    -gtk-icon-size: 16px;
+}
+
+entry > image.left { margin-right: 6px; }
+entry > image.right { margin-left: 6px; }
+
+entry > text > placeholder {
+    color: @es_ink_gray_4;
+}
+
+entry.error {
+    background-color: @es_surface_red_2;
+    outline: 1px solid @es_outline_red_3;
+}
+
+entry.warning {
+    outline: 1px solid @es_outline_amber_3;
+}
+
+entry > progress {
+    margin: 0 -8px;
+    border-bottom: 2px solid @es_accent;
+    background: none;
+}
+
+/* spin: one filled box with small ghost steppers hugging the value */
+spinbutton:not(.vertical) {
+    padding: 0;
+    border-spacing: 0;
+}
+
+spinbutton > text {
+    min-width: 0;
+    min-height: 0;
+    padding: 0 4px 0 8px;
+}
+
+spinbutton:not(.vertical) > button.image-button.up:not(.flat),
+spinbutton:not(.vertical) > button.image-button.down:not(.flat) {
+    min-width: 20px;
+    min-height: 20px;
+    margin: 4px 0;
+    padding: 0;
+    border-radius: 6px;
+    background-color: transparent;
+    color: @es_ink_gray_6;
+    border: none;
+    box-shadow: none;
+}
+
+spinbutton > button:last-child {
+    margin-right: 4px;
+}
+
+spinbutton:not(.vertical) > button.image-button.up:not(.flat):hover,
+spinbutton:not(.vertical) > button.image-button.down:not(.flat):hover {
+    background-color: @es_surface_gray_4;
+    color: @es_ink_gray_8;
+}
+
+spinbutton:not(.vertical) > button.image-button.up:not(.flat):disabled,
+spinbutton:not(.vertical) > button.image-button.down:not(.flat):disabled {
+    background-color: transparent;
+    color: @es_ink_gray_3;
+}
+
+spinbutton > button > image {
+    -gtk-icon-size: 14px;
+}
+
+spinbutton.vertical > button {
+    margin: 0;
+}
+
+/* checks and radios: frappe checks are gray solid not blue */
+check,
+radio {
+    min-width: 14px;
+    min-height: 14px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid @es_outline_gray_4;
+    border-radius: 4px;
+    background-color: @es_surface_base;
+    background-image: none;
+    box-shadow: none;
+    color: @es_ink_base;
+    -gtk-icon-size: 14px;
+    transition: background-color 120ms ease, border-color 120ms ease;
+}
+
+radio {
+    border-radius: 100px;
+}
+
+check:hover,
+radio:hover,
+check:active,
+radio:active,
+check:checked:hover,
+radio:checked:hover,
+check:checked:active,
+radio:checked:active {
+    background-image: none;
+    box-shadow: none;
+}
+
+check:hover,
+radio:hover {
+    border-color: @es_outline_gray_5;
+}
+
+check:checked,
+radio:checked,
+check:indeterminate,
+radio:indeterminate {
+    border-color: @es_surface_gray_10;
+    background-color: @es_surface_gray_10;
+    background-image: none;
+    color: @es_ink_base;
+}
+
+check:disabled,
+radio:disabled {
+    border-color: @es_outline_gray_2;
+    background-color: @es_surface_gray_1;
+}
+
+check:checked:disabled,
+radio:checked:disabled {
+    border-color: @es_surface_gray_4;
+    background-color: @es_surface_gray_4;
+}
+
+checkbutton {
+    padding: 2px;
+    border-spacing: 8px;
+    outline-offset: 0;
+}
+
+checkbutton:focus-visible > check,
+checkbutton:focus-visible > radio {
+    outline: 2px solid @es_focus;
+    outline-offset: 1px;
+}
+
+checkbutton:disabled > label {
+    color: @es_ink_gray_4;
+}
+
+/* switch: gtk gives the slider half the width so the track is 2:1 */
+switch {
+    min-width: 32px;
+    min-height: 16px;
+    padding: 0;
+    border: none;
+    border-radius: 100px;
+    background-color: @es_surface_gray_4;
+    background-image: none;
+    box-shadow: none;
+    color: transparent;
+    outline-offset: 1px;
+    transition: background-color 120ms ease;
+}
+
+switch > image {
+    opacity: 0;
+}
+
+switch:hover {
+    background-color: @es_surface_gray_5;
+}
+
+switch:checked {
+    background-color: @es_surface_gray_10;
+}
+
+switch:checked:hover {
+    background-color: @es_surface_gray_9;
+}
+
+switch:disabled {
+    background-color: @es_surface_gray_2;
+}
+
+switch:checked:disabled {
+    background-color: @es_surface_gray_5;
+}
+
+switch:focus-visible {
+    outline: 2px solid @es_focus;
+}
+
+switch > slider,
+switch:hover > slider,
+switch:checked > slider,
+switch:disabled > slider {
+    min-width: 12px;
+    min-height: 12px;
+    margin: 2px;
+    border: none;
+    border-radius: 100px;
+    background-color: @es_light_gray_50;
+    background-image: none;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.20);
+}
+
+switch:disabled > slider {
+    box-shadow: none;
+}
+
+/* on track is gray-10 which is near white in dark so the knob inverts with it */
+switch:checked > slider {
+    background-color: @es_ink_base;
+}
+
+/* scale */
+scale {
+    min-height: 16px;
+    min-width: 16px;
+    padding: 6px;
+}
+
+scale > trough {
+    min-height: 4px;
+    min-width: 4px;
+    border: none;
+    border-radius: 100px;
+    background-color: @es_surface_gray_3;
+    box-shadow: none;
+    outline-offset: 4px;
+}
+
+scale > trough > highlight {
+    border: none;
+    border-radius: 100px;
+    background-color: @es_surface_gray_10;
+}
+
+scale > trough > fill {
+    border: none;
+    border-radius: 100px;
+    background-color: @es_surface_gray_4;
+}
+
+scale > trough > slider {
+    min-width: 16px;
+    min-height: 16px;
+    margin: -6px;
+    border: none;
+    border-radius: 100px;
+    background-color: @es_light_gray_50;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.18);
+}
+
+scale:disabled > trough > highlight {
+    background-color: @es_surface_gray_5;
+}
+
+scale:focus-visible > trough {
+    outline: 2px solid @es_focus;
+}
+
+scale > marks indicator {
+    min-width: 1px;
+    min-height: 4px;
+    background-color: @es_outline_gray_3;
+}
+
+scale > value,
+scale > marks {
+    color: @es_ink_gray_5;
+}
+
+/* progress and level */
+progressbar > trough,
+progressbar > trough > progress {
+    min-height: 6px;
+    min-width: 6px;
+    border: none;
+    border-radius: 100px;
+    background-image: none;
+    box-shadow: none;
+}
+
+progressbar > trough {
+    background-color: @es_surface_gray_3;
+}
+
+progressbar > trough > progress {
+    background-color: @es_surface_gray_10;
+}
+
+progressbar > text {
+    color: @es_ink_gray_5;
+    font-size: 12px;
+}
+
+levelbar > trough > block {
+    min-height: 6px;
+    border: none;
+    border-radius: 100px;
+    background-color: @es_surface_gray_10;
+}
+
+levelbar > trough > block.empty {
+    background-color: @es_surface_gray_3;
+}
+
+levelbar > trough > block.low { background-color: @es_warning; }
+levelbar > trough > block.full { background-color: @es_success; }
+
+spinner {
+    color: @es_ink_gray_5;
+}
+
+/* scrollbars: thin pills that only fill on hover */
+scrollbar {
+    background: none;
+    border: none;
+}
+
+scrollbar > range > trough {
+    background: none;
+    border: none;
+    margin: 2px;
+}
+
+scrollbar > range > trough > slider {
+    min-width: 6px;
+    min-height: 6px;
+    border: none;
+    border-radius: 100px;
+    background-color: @es_surface_gray_5;
+}
+
+scrollbar > range > trough > slider:hover {
+    background-color: @es_surface_gray_6;
+}
+
+scrollbar > range > trough > slider:active {
+    background-color: @es_surface_gray_7;
+}
+
+scrollbar.overlay-indicator:not(.dragging):not(.hovering) > range > trough > slider {
+    min-width: 3px;
+    min-height: 3px;
+}
+
+/* tooltip: frappe's inverted gray chip */
+tooltip,
+tooltip.background {
+    padding: 4px 8px;
+    border: none;
+    border-radius: 8px;
+    background-color: @es_surface_gray_10;
+    color: @es_ink_base;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.16);
+    font-size: 12px;
+}
+
+tooltip > box > label {
+    color: @es_ink_base;
+}

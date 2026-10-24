@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Espresso
+Comment=Frappe Espresso styled theme for GTK
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Espresso
+MetacityTheme=Espresso
+ButtonLayout=:minimize,maximize,close

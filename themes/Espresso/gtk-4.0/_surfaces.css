@@ -1,0 +1,742 @@
+/* surfaces: headerbar popovers menus lists and sidebar */
+
+headerbar,
+.titlebar:not(headerbar) {
+    min-height: 44px;
+    padding: 0 8px;
+    border: none;
+    border-bottom: 1px solid @es_outline_gray_1;
+    border-radius: 0;
+    background-color: @es_surface_base;
+    background-image: none;
+    box-shadow: none;
+    color: @es_ink_gray_8;
+}
+
+headerbar:backdrop,
+.titlebar:backdrop:not(headerbar) {
+    background-color: @es_surface_base;
+    color: @es_ink_gray_6;
+}
+
+headerbar .title {
+    font-weight: 600;
+}
+
+headerbar .subtitle {
+    font-size: 12px;
+    color: @es_ink_gray_5;
+}
+
+/* headerbar buttons are ghosts */
+headerbar button,
+headerbar menubutton > button,
+headerbar dropdown > button {
+    background-color: transparent;
+}
+
+headerbar button:hover,
+headerbar menubutton > button:hover,
+headerbar dropdown > button:hover {
+    background-color: @es_surface_gray_2;
+}
+
+headerbar button:active,
+headerbar button:checked {
+    background-color: @es_surface_gray_3;
+}
+
+headerbar button.suggested-action { background-color: @es_surface_gray_10; }
+headerbar button.destructive-action { background-color: @es_destructive; }
+
+/* window buttons: plain glyph with a small circle only on hover */
+windowcontrols {
+    border-spacing: 6px;
+}
+
+windowcontrols > button,
+windowcontrols > button:hover,
+windowcontrols > button:active {
+    min-width: 24px;
+    min-height: 24px;
+    padding: 0;
+    margin: 0;
+    background: none;
+    box-shadow: none;
+}
+
+/* the base theme pads the last button and transitions borders only in some states so the close icon slid on hover */
+headerbar windowcontrols > button,
+headerbar windowcontrols > button:hover,
+headerbar windowcontrols > button:active,
+headerbar windowcontrols.end > button:last-child,
+headerbar windowcontrols.end > button:last-child:hover {
+    min-width: 24px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    transition: none;
+}
+
+headerbar windowcontrols.end {
+    margin-right: 0;
+}
+
+windowcontrols > button > image {
+    min-width: 16px;
+    min-height: 16px;
+    padding: 4px;
+    border-radius: 100px;
+    background: none;
+    box-shadow: none;
+    -gtk-icon-size: 16px;
+    color: @es_ink_gray_6;
+}
+
+windowcontrols > button:hover > image {
+    background-color: @es_surface_gray_3;
+    color: @es_ink_gray_8;
+}
+
+windowcontrols > button:active > image {
+    background-color: @es_surface_gray_4;
+}
+
+/* popovers: one borderless card with 12px radius p-1 and shadow 2xl */
+popover,
+popover.background,
+popover.menu {
+    padding: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+popover > contents,
+popover.background > contents,
+dropdown > popover.menu.background > contents {
+    padding: 4px;
+    border: none;
+    border-radius: 12px;
+    background-color: @es_surface_elevation_2;
+    background-image: none;
+    color: @es_ink_gray_8;
+    box-shadow: 0 0 0 1px @es_outline_elevation_2, 0 4px 6px -1px rgba(0, 0, 0, 0.06), 0 12px 24px -4px rgba(0, 0, 0, 0.12);
+}
+
+popover > arrow,
+popover.background > arrow {
+    border: none;
+    background-color: @es_surface_elevation_2;
+    box-shadow: none;
+}
+
+popover > contents > list,
+popover > contents > .view,
+popover > contents listview,
+popover > contents scrolledwindow,
+popover > contents viewport {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+}
+
+popover > contents separator,
+popover.background > contents separator {
+    margin: 4px 0;
+    background-color: @es_outline_gray_1;
+}
+
+/* menu items and select options share one 28px row */
+modelbutton,
+popover > contents listview > row,
+popover > contents list > row,
+dropdown popover listview > row.activatable,
+combobox popover listview > row.activatable {
+    min-height: 28px;
+    padding: 0 8px;
+    border: none;
+    border-radius: 8px;
+    background: none;
+    box-shadow: none;
+    color: @es_ink_gray_8;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+modelbutton:hover,
+modelbutton:selected,
+popover > contents listview > row:hover,
+popover > contents listview > row:selected,
+popover > contents list > row:hover,
+dropdown popover listview > row.activatable:hover,
+dropdown popover listview > row.activatable:selected,
+dropdown popover listview > row.activatable:selected:hover,
+combobox popover listview > row.activatable:selected {
+    background-color: @es_surface_gray_3;
+    color: @es_ink_gray_8;
+}
+
+modelbutton:active,
+popover > contents listview > row:active {
+    background-color: @es_surface_gray_4;
+}
+
+modelbutton:disabled {
+    color: @es_ink_gray_4;
+}
+
+modelbutton > box {
+    border-spacing: 8px;
+}
+
+modelbutton image {
+    min-width: 16px;
+    min-height: 16px;
+    margin-right: 8px;
+    -gtk-icon-size: 16px;
+    color: @es_ink_gray_6;
+}
+
+modelbutton > arrow,
+modelbutton > check,
+modelbutton > radio {
+    -gtk-icon-size: 16px;
+}
+
+modelbutton accelerator,
+popover.menu accelerator {
+    color: @es_ink_gray_5;
+    margin-left: 16px;
+}
+
+popover.menu box.inline-buttons button {
+    min-height: 28px;
+}
+
+popover.menu label.title {
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: 500;
+    color: @es_ink_gray_5;
+}
+
+dropdown popover listview,
+combobox popover listview {
+    margin: 0;
+}
+
+dropdown popover,
+combobox popover {
+    margin-top: 4px;
+}
+
+/* select options show a check on the current one and no tint */
+dropdown > popover > contents listview > row > box > image,
+dropdown popover listview > row image {
+    -gtk-icon-size: 16px;
+    color: @es_ink_gray_8;
+}
+
+dropdown popover .dropdown-searchbar {
+    padding: 0 0 4px 0;
+    border: none;
+}
+
+/* menubar */
+menubar {
+    padding: 2px 4px;
+    background-color: @es_surface_base;
+    border-bottom: 1px solid @es_outline_gray_1;
+    box-shadow: none;
+}
+
+menubar > item {
+    min-height: 28px;
+    padding: 0 8px;
+    border-radius: 8px;
+    color: @es_ink_gray_8;
+}
+
+menubar > item:hover,
+menubar > item:selected {
+    background-color: @es_surface_gray_3;
+}
+
+/* lists */
+list,
+listview {
+    background-color: @es_surface_base;
+    color: @es_ink_gray_8;
+}
+
+list > row,
+listview > row {
+    padding: 0 8px;
+    min-height: 28px;
+}
+
+row.activatable:hover {
+    background-color: @es_surface_gray_2;
+}
+
+row.activatable:active {
+    background-color: @es_surface_gray_3;
+}
+
+list > row:selected,
+listview > row:selected {
+    background-color: @es_surface_gray_3;
+    color: @es_ink_gray_8;
+}
+
+row:disabled {
+    color: @es_ink_gray_4;
+}
+
+list > row:focus-visible,
+listview > row:focus-visible {
+    outline: 2px solid @es_focus;
+    outline-offset: -2px;
+}
+
+list.separators:not(.horizontal) > row:not(.separator),
+listview.separators:not(.horizontal) > row:not(.separator) {
+    border-bottom: 1px solid @es_outline_gray_1;
+}
+
+/* boxed list: frappe card surface */
+.boxed-list {
+    border: 1px solid @es_outline_gray_1;
+    border-radius: 12px;
+    background-color: @es_surface_elevation_1;
+}
+
+.boxed-list > row {
+    padding: 0;
+    border-bottom: 1px solid @es_outline_gray_1;
+    border-radius: 0;
+}
+
+.boxed-list > row:first-child {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.boxed-list > row:last-child {
+    border-bottom: none;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+/* sidebar: active item is a raised chip */
+.navigation-sidebar {
+    padding: 8px 0;
+    background-color: @es_surface_sidebar;
+}
+
+.navigation-sidebar > row {
+    min-height: 28px;
+    margin: 1px 8px;
+    padding: 0 8px;
+    border-radius: 8px;
+    color: @es_ink_gray_7;
+}
+
+.navigation-sidebar > row:hover {
+    background-color: @es_surface_gray_2;
+}
+
+.navigation-sidebar > row:selected,
+.navigation-sidebar > row:selected:hover {
+    background-color: @es_surface_elevation_3;
+    color: @es_ink_gray_9;
+    box-shadow: 0 0 0 1px @es_outline_elevation_1, 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+    font-weight: 500;
+}
+
+.navigation-sidebar > separator {
+    margin: 4px 8px;
+    background-color: @es_outline_gray_1;
+}
+
+/* notebook and tabs */
+notebook > header {
+    background-color: transparent;
+    background-image: none;
+    border: none;
+    border-bottom: 1px solid @es_outline_gray_1;
+    padding: 4px;
+    box-shadow: none;
+}
+
+notebook > header > tabs > tab {
+    background-color: transparent;
+    background-image: none;
+    min-height: 28px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 6px 6px 0 0;
+    color: @es_ink_gray_5;
+    font-size: 13px;
+    font-weight: 500;
+    box-shadow: inset 0 -2px 0 transparent;
+    transition: background-color 120ms ease, color 120ms ease, box-shadow 120ms ease;
+}
+
+notebook > header > tabs > tab:hover {
+    background-color: @es_surface_gray_2;
+    color: @es_ink_gray_8;
+    box-shadow: inset 0 -2px 0 transparent;
+}
+
+notebook > header > tabs > tab:checked {
+    background-color: transparent;
+    color: @es_ink_gray_8;
+    box-shadow: inset 0 -2px 0 @es_accent;
+}
+
+notebook > header > tabs > tab:checked:hover {
+    background-color: @es_surface_gray_2;
+    box-shadow: inset 0 -2px 0 @es_accent;
+}
+
+notebook > header > tabs > tab:disabled {
+    background-color: transparent;
+    color: @es_ink_gray_3;
+    box-shadow: none;
+}
+
+notebook > header > tabs > arrow {
+    border-radius: 6px;
+    color: @es_ink_gray_5;
+}
+
+notebook > header > tabs > arrow:hover:not(:active):not(:backdrop) {
+    background-color: @es_surface_gray_3;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+notebook, notebook > stack:not(:only-child) {
+    background-color: @es_surface_base;
+    border: none;
+    box-shadow: none;
+}
+
+notebook > header {
+    border-bottom: 1px solid @es_outline_gray_1;
+}
+
+/* tab bar */
+tabbar {
+    background-color: @es_surface_gray_1;
+    border-bottom: 1px solid @es_outline_gray_1;
+    padding: 4px;
+}
+
+tabbar tab {
+    background-color: transparent;
+    background-image: none;
+    min-height: 28px;
+    padding: 0 12px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    color: @es_ink_gray_5;
+    font-weight: 500;
+    box-shadow: none;
+    transition: background-color 120ms ease, border-color 120ms ease, color 120ms ease;
+}
+
+tabbar tab:hover {
+    background-color: @es_surface_gray_3;
+    color: @es_ink_gray_8;
+}
+
+tabbar tab:checked {
+    background-color: @es_surface_base;
+    border-color: @es_outline_gray_1;
+    color: @es_ink_gray_8;
+    box-shadow: none;
+}
+
+tabbar tab:disabled {
+    background-color: transparent;
+    border-color: transparent;
+    color: @es_ink_gray_3;
+}
+
+/* stack switcher */
+stackswitcher,
+.stack-switcher {
+    background-color: transparent;
+    border-spacing: 2px;
+}
+
+stackswitcher > button,
+.stack-switcher > button {
+    background-color: transparent;
+    background-image: none;
+    border-color: transparent;
+    border-radius: 6px;
+    min-height: 24px;
+    padding: 2px 10px;
+    color: @es_ink_gray_8;
+    font-weight: 500;
+    box-shadow: none;
+    transition: background-color 120ms ease, border-color 120ms ease, color 120ms ease;
+}
+
+stackswitcher > button:hover,
+.stack-switcher > button:hover {
+    background-color: @es_surface_gray_2;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+stackswitcher > button:checked,
+.stack-switcher > button:checked {
+    background-color: @es_surface_elevation_1;
+    background-image: none;
+    border-color: @es_outline_gray_1;
+    color: @es_ink_gray_8;
+    box-shadow: none;
+}
+
+stackswitcher > button:disabled,
+.stack-switcher > button:disabled {
+    background-color: transparent;
+    border-color: transparent;
+    color: @es_ink_gray_3;
+}
+
+/* bars */
+searchbar > revealer > box {
+    background-color: @es_surface_gray_1;
+    background-image: none;
+    border: none;
+    border-bottom: 1px solid @es_outline_gray_1;
+    padding: 6px;
+    border-spacing: 6px;
+    box-shadow: none;
+    transition: background-color 120ms ease, border-color 120ms ease;
+}
+
+searchbar > revealer > box:backdrop {
+    background-color: @es_surface_gray_1;
+    border-bottom-color: @es_outline_gray_1;
+    box-shadow: none;
+}
+
+actionbar > revealer > box {
+    background-color: @es_surface_gray_1;
+    background-image: none;
+    border: none;
+    border-top: 1px solid @es_outline_gray_1;
+    padding: 6px;
+    border-spacing: 6px;
+    box-shadow: none;
+}
+
+.toolbar {
+    background-color: @es_surface_gray_1;
+    background-image: none;
+    border: 1px solid @es_outline_gray_1;
+    padding: 6px;
+    border-spacing: 4px;
+    box-shadow: none;
+}
+
+/* toolbar controls are flat and borderless */
+.toolbar button,
+.toolbar > :not(.linked) > button,
+.toolbar :not(.linked) > menubutton > button {
+    background-color: transparent;
+    background-image: none;
+    border-color: transparent;
+    box-shadow: none;
+    transition: background-color 120ms ease, border-color 120ms ease, color 120ms ease;
+}
+
+.toolbar button:hover,
+.toolbar > :not(.linked) > button:hover,
+.toolbar :not(.linked) > menubutton > button:hover {
+    background-color: @es_surface_gray_2;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.toolbar button:active,
+.toolbar button:checked,
+.toolbar > :not(.linked) > button:active,
+.toolbar > :not(.linked) > button:checked,
+.toolbar :not(.linked) > menubutton > button:active,
+.toolbar :not(.linked) > menubutton > button:checked {
+    background-color: @es_surface_gray_3;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.toolbar button:disabled,
+.toolbar > :not(.linked) > button:disabled,
+.toolbar :not(.linked) > menubutton > button:disabled {
+    background-color: transparent;
+    border-color: transparent;
+    color: @es_ink_gray_3;
+    box-shadow: none;
+}
+
+.toolbar.horizontal > separator {
+    margin: 4px 0;
+}
+
+.toolbar.vertical > separator {
+    margin: 0 4px;
+}
+
+statusbar {
+    background-color: @es_surface_gray_1;
+    border-top: 1px solid @es_outline_gray_1;
+    padding: 6px 10px;
+    color: @es_ink_gray_5;
+    font-size: 12px;
+}
+
+/* paned */
+paned > separator {
+    background-color: @es_outline_gray_1;
+    background-image: none;
+    min-width: 1px;
+    min-height: 1px;
+    border: none;
+    box-shadow: none;
+}
+
+paned > separator.wide {
+    background-color: @es_surface_gray_1;
+    background-image: none;
+    min-width: 5px;
+    min-height: 5px;
+    border: none;
+}
+
+paned > separator:hover {
+    background-color: @es_outline_gray_2;
+}
+
+paned > separator:selected {
+    background-color: @es_accent;
+}
+
+/* frame and card */
+frame,
+.card {
+    background-color: @es_surface_elevation_1;
+    border: 1px solid @es_outline_gray_1;
+    border-radius: 8px;
+}
+
+.card {
+    box-shadow: inset 0px 0.25px 1.5px 0px #ffffff29, 0px 0px 1.5px 0px #00000029, 0px 2px 5px 0px #00000024;  /* elevation base */
+}
+
+frame > label {
+    color: @es_ink_gray_5;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 4px;
+}
+
+/* expander */
+expander {
+    color: @es_ink_gray_5;
+}
+
+expander:disabled {
+    color: @es_ink_gray_3;
+}
+
+expander-widget > box > title {
+    border-radius: 6px;
+    padding: 4px 6px;
+    transition: background-color 120ms ease, color 120ms ease;
+}
+
+expander-widget > box > title:hover {
+    background-color: @es_surface_gray_2;
+}
+
+/* infobar */
+infobar > revealer > box {
+    padding: 8px;
+    border-spacing: 8px;
+}
+
+infobar .close {
+    background-color: transparent;
+    background-image: none;
+    border-color: transparent;
+    border-radius: 100px;
+    box-shadow: none;
+}
+
+/* toast stays dark in both modes */
+toast,
+.app-notification {
+    background-color: @es_ink_gray_9;
+    background-image: none;
+    color: @es_surface_base;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    border-spacing: 8px;
+    box-shadow: inset 0px 0.25px 1.5px 0px #ffffff29, 0px 0px 1.5px 0px #00000029, 0px 2px 5px 0px #00000024;  /* elevation base */
+}
+
+toast button,
+.app-notification button {
+    background-color: transparent;
+    background-image: none;
+    border-color: transparent;
+    border-radius: 6px;
+    color: @es_surface_base;
+    box-shadow: none;
+    transition: background-color 120ms ease, color 120ms ease;
+}
+
+toast button:hover,
+.app-notification button:hover {
+    background-color: alpha(@es_surface_base, 0.12);
+    border-color: transparent;
+}
+
+toast button:active,
+.app-notification button:active {
+    background-color: alpha(@es_surface_base, 0.20);
+    border-color: transparent;
+}
+
+toast button:disabled,
+.app-notification button:disabled {
+    background-color: transparent;
+    border-color: transparent;
+    color: alpha(@es_surface_base, 0.45);
+}
+
+/* focus ring on surface widgets comes from _base */
+row:focus-visible,
+modelbutton:focus-visible,
+notebook > header > tabs > tab:focus-visible,
+navigation-sidebar:focus-visible,
+navigation-sidebar > row:focus-visible,
+stackswitcher > button:focus-visible {
+    outline-color: @es_focus;
+    outline-style: solid;
+}
+
+/* tooltips sit on the sm elevation */
+tooltip {
+    box-shadow: inset 0px 0.25px 1.5px 0px #ffffff29, 0px 0px 1px 0px #00000033, 0px 1px 3px 0px #00000024;  /* elevation sm */
+}
