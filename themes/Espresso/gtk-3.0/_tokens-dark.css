@@ -1,0 +1,759 @@
+/* generated from tokens.json (frappe-ui fa69f53) by tokens/gen-css.mjs do not edit */
+
+/* raw ramps */
+@define-color es_light_gray_50 #f8f8f8;
+@define-color es_light_gray_100 #f3f3f3;
+@define-color es_light_gray_200 #ededed;
+@define-color es_light_gray_300 #e2e2e2;
+@define-color es_light_gray_400 #c7c7c7;
+@define-color es_light_gray_500 #999999;
+@define-color es_light_gray_600 #7c7c7c;
+@define-color es_light_gray_700 #525252;
+@define-color es_light_gray_800 #383838;
+@define-color es_light_gray_900 #171717;
+@define-color es_light_gray_950 #0f0f0f;
+@define-color es_light_blue_50 #f1f8fe;
+@define-color es_light_blue_100 #e6f4ff;
+@define-color es_light_blue_200 #d1eaff;
+@define-color es_light_blue_300 #b5ddfd;
+@define-color es_light_blue_400 #61afef;
+@define-color es_light_blue_500 #0c8ef8;
+@define-color es_light_blue_600 #077ddf;
+@define-color es_light_blue_700 #0475d3;
+@define-color es_light_blue_800 #005cad;
+@define-color es_light_blue_900 #004880;
+@define-color es_light_blue_950 #032e63;
+@define-color es_light_green_50 #f0faf3;
+@define-color es_light_green_100 #e4faeb;
+@define-color es_light_green_200 #bdefcc;
+@define-color es_light_green_300 #a8e6be;
+@define-color es_light_green_400 #7edaa1;
+@define-color es_light_green_500 #43ac79;
+@define-color es_light_green_600 #258c5c;
+@define-color es_light_green_700 #14804d;
+@define-color es_light_green_800 #085e35;
+@define-color es_light_green_900 #173b2c;
+@define-color es_light_green_950 #0a3020;
+@define-color es_light_red_50 #fff5f5;
+@define-color es_light_red_100 #ffe7e7;
+@define-color es_light_red_200 #ffd8d8;
+@define-color es_light_red_300 #fdc2c2;
+@define-color es_light_red_400 #f79596;
+@define-color es_light_red_500 #e03434;
+@define-color es_light_red_600 #ce2c2c;
+@define-color es_light_red_700 #b41d1d;
+@define-color es_light_red_800 #941f1f;
+@define-color es_light_red_900 #6b1515;
+@define-color es_light_red_950 #4c0d0d;
+@define-color es_light_orange_50 #fff4ed;
+@define-color es_light_orange_100 #ffefe4;
+@define-color es_light_orange_200 #ffdec5;
+@define-color es_light_orange_300 #ffcba3;
+@define-color es_light_orange_400 #f4b07f;
+@define-color es_light_orange_500 #e86c13;
+@define-color es_light_orange_600 #d35a08;
+@define-color es_light_orange_700 #bd3e0c;
+@define-color es_light_orange_800 #9e3513;
+@define-color es_light_orange_900 #6b2711;
+@define-color es_light_orange_950 #491605;
+@define-color es_light_amber_50 #fdf8ed;
+@define-color es_light_amber_100 #fff4d3;
+@define-color es_light_amber_200 #f6eac0;
+@define-color es_light_amber_300 #f3e3b4;
+@define-color es_light_amber_400 #f4cd80;
+@define-color es_light_amber_500 #df9310;
+@define-color es_light_amber_600 #ca7e0e;
+@define-color es_light_amber_700 #bb6f0a;
+@define-color es_light_amber_800 #91400d;
+@define-color es_light_amber_900 #763813;
+@define-color es_light_amber_950 #4e2209;
+@define-color es_light_yellow_50 #fcfbe8;
+@define-color es_light_yellow_100 #fff7d3;
+@define-color es_light_yellow_200 #f7e9a8;
+@define-color es_light_yellow_300 #f5e171;
+@define-color es_light_yellow_400 #f2d14b;
+@define-color es_light_yellow_500 #edba14;
+@define-color es_light_yellow_600 #ab790c;
+@define-color es_light_yellow_700 #9a6304;
+@define-color es_light_yellow_800 #8c5600;
+@define-color es_light_yellow_900 #733f12;
+@define-color es_light_yellow_950 #542e0e;
+@define-color es_light_teal_50 #eefbf8;
+@define-color es_light_teal_100 #e6f7f4;
+@define-color es_light_teal_200 #bae8e1;
+@define-color es_light_teal_300 #97ded4;
+@define-color es_light_teal_400 #73d1c4;
+@define-color es_light_teal_500 #35baad;
+@define-color es_light_teal_600 #09857b;
+@define-color es_light_teal_700 #10736b;
+@define-color es_light_teal_800 #125c57;
+@define-color es_light_teal_900 #114541;
+@define-color es_light_teal_950 #053734;
+@define-color es_light_cyan_50 #f2fbfd;
+@define-color es_light_cyan_100 #ddf7ff;
+@define-color es_light_cyan_200 #b3e8f7;
+@define-color es_light_cyan_300 #99e2f8;
+@define-color es_light_cyan_400 #72d5f3;
+@define-color es_light_cyan_500 #3bbde5;
+@define-color es_light_cyan_600 #1f8cad;
+@define-color es_light_cyan_700 #1d7f9d;
+@define-color es_light_cyan_800 #125c73;
+@define-color es_light_cyan_900 #164759;
+@define-color es_light_cyan_950 #05383f;
+@define-color es_light_purple_50 #f8f3fb;
+@define-color es_light_purple_100 #f6e9ff;
+@define-color es_light_purple_200 #ecd3ff;
+@define-color es_light_purple_300 #e2b9fc;
+@define-color es_light_purple_400 #bf78fa;
+@define-color es_light_purple_500 #9c45e3;
+@define-color es_light_purple_600 #8e49ca;
+@define-color es_light_purple_700 #6e399d;
+@define-color es_light_purple_800 #5c2f83;
+@define-color es_light_purple_900 #401863;
+@define-color es_light_purple_950 #2d084e;
+@define-color es_light_pink_50 #fff7fc;
+@define-color es_light_pink_100 #fde8f5;
+@define-color es_light_pink_200 #ffd5f0;
+@define-color es_light_pink_300 #f9b9e0;
+@define-color es_light_pink_400 #f77cc6;
+@define-color es_light_pink_500 #e34aa6;
+@define-color es_light_pink_600 #cf3a96;
+@define-color es_light_pink_700 #9c2671;
+@define-color es_light_pink_800 #801458;
+@define-color es_light_pink_900 #570f3e;
+@define-color es_light_pink_950 #40062c;
+@define-color es_light_violet_50 #f7f6fe;
+@define-color es_light_violet_100 #eee8ff;
+@define-color es_light_violet_200 #dbd5ff;
+@define-color es_light_violet_300 #d2c5fc;
+@define-color es_light_violet_400 #b5a1fc;
+@define-color es_light_violet_500 #7757ee;
+@define-color es_light_violet_600 #6e57d1;
+@define-color es_light_violet_700 #4f3da1;
+@define-color es_light_violet_800 #392980;
+@define-color es_light_violet_900 #251959;
+@define-color es_light_violet_950 #150655;
+@define-color es_light_gray_alpha_50 rgba(0, 0, 0, 0.031);
+@define-color es_light_gray_alpha_100 rgba(0, 0, 0, 0.043);
+@define-color es_light_gray_alpha_200 rgba(0, 0, 0, 0.071);
+@define-color es_light_gray_alpha_300 rgba(0, 0, 0, 0.114);
+@define-color es_light_gray_alpha_400 rgba(0, 0, 0, 0.22);
+@define-color es_light_gray_alpha_500 rgba(0, 0, 0, 0.4);
+@define-color es_light_gray_alpha_600 rgba(0, 0, 0, 0.514);
+@define-color es_light_gray_alpha_700 rgba(0, 0, 0, 0.678);
+@define-color es_light_gray_alpha_800 rgba(0, 0, 0, 0.78);
+@define-color es_light_gray_alpha_900 rgba(0, 0, 0, 0.91);
+@define-color es_light_gray_alpha_950 rgba(0, 0, 0, 0.941);
+@define-color es_dark_gray_50 #f8f8f8;
+@define-color es_dark_gray_100 #d9d9d9;
+@define-color es_dark_gray_200 #afafaf;
+@define-color es_dark_gray_300 #999999;
+@define-color es_dark_gray_400 #7a7a7a;
+@define-color es_dark_gray_450 #575757;
+@define-color es_dark_gray_500 #424242;
+@define-color es_dark_gray_600 #383838;
+@define-color es_dark_gray_700 #292929;
+@define-color es_dark_gray_800 #242424;
+@define-color es_dark_gray_900 #1f1f1f;
+@define-color es_dark_gray_950 #171717;
+@define-color es_dark_blue_50 #c9e0f5;
+@define-color es_dark_blue_100 #add2f5;
+@define-color es_dark_blue_200 #76bef9;
+@define-color es_dark_blue_300 #349bef;
+@define-color es_dark_blue_400 #2480cc;
+@define-color es_dark_blue_500 #1c6ec4;
+@define-color es_dark_blue_600 #0c59a2;
+@define-color es_dark_blue_700 #074783;
+@define-color es_dark_blue_800 #063465;
+@define-color es_dark_blue_900 #0a2e5c;
+@define-color es_dark_blue_950 #0f233d;
+@define-color es_dark_green_50 #c8f3de;
+@define-color es_dark_green_100 #9be6c1;
+@define-color es_dark_green_200 #7dc5a2;
+@define-color es_dark_green_300 #369768;
+@define-color es_dark_green_400 #128251;
+@define-color es_dark_green_500 #127846;
+@define-color es_dark_green_600 #077241;
+@define-color es_dark_green_700 #085934;
+@define-color es_dark_green_800 #0b4229;
+@define-color es_dark_green_900 #0e3521;
+@define-color es_dark_green_950 #072716;
+@define-color es_dark_red_50 #ffdede;
+@define-color es_dark_red_100 #ffc1c1;
+@define-color es_dark_red_200 #ff7575;
+@define-color es_dark_red_300 #eb4c4c;
+@define-color es_dark_red_400 #c23838;
+@define-color es_dark_red_500 #b03030;
+@define-color es_dark_red_600 #8e2e2e;
+@define-color es_dark_red_700 #852929;
+@define-color es_dark_red_800 #742a2a;
+@define-color es_dark_red_900 #592222;
+@define-color es_dark_red_950 #391416;
+@define-color es_dark_orange_50 #ffcdad;
+@define-color es_dark_orange_100 #ffa873;
+@define-color es_dark_orange_200 #fa8a40;
+@define-color es_dark_orange_300 #e3701c;
+@define-color es_dark_orange_400 #e16915;
+@define-color es_dark_orange_500 #984509;
+@define-color es_dark_orange_600 #823906;
+@define-color es_dark_orange_700 #683108;
+@define-color es_dark_orange_800 #532707;
+@define-color es_dark_orange_900 #361c09;
+@define-color es_dark_orange_950 #2b1708;
+@define-color es_dark_amber_50 #ffe59a;
+@define-color es_dark_amber_100 #f4c25f;
+@define-color es_dark_amber_200 #e9a143;
+@define-color es_dark_amber_300 #c67516;
+@define-color es_dark_amber_400 #bd660e;
+@define-color es_dark_amber_500 #af5e0d;
+@define-color es_dark_amber_600 #985315;
+@define-color es_dark_amber_700 #753a08;
+@define-color es_dark_amber_800 #5a2d07;
+@define-color es_dark_amber_900 #452608;
+@define-color es_dark_amber_950 #331c06;
+@define-color es_dark_yellow_50 #ffeeb8;
+@define-color es_dark_yellow_100 #ffe386;
+@define-color es_dark_yellow_200 #f8d76a;
+@define-color es_dark_yellow_300 #ecc02e;
+@define-color es_dark_yellow_400 #bb9729;
+@define-color es_dark_yellow_500 #9c7e1b;
+@define-color es_dark_yellow_600 #997809;
+@define-color es_dark_yellow_700 #705606;
+@define-color es_dark_yellow_800 #5b4605;
+@define-color es_dark_yellow_900 #3a2c04;
+@define-color es_dark_yellow_950 #261d03;
+@define-color es_dark_teal_50 #a0f7ed;
+@define-color es_dark_teal_100 #7ef3e7;
+@define-color es_dark_teal_200 #51decf;
+@define-color es_dark_teal_300 #27bcac;
+@define-color es_dark_teal_400 #2da094;
+@define-color es_dark_teal_500 #1c7169;
+@define-color es_dark_teal_600 #145b54;
+@define-color es_dark_teal_700 #0c4942;
+@define-color es_dark_teal_800 #0a3a35;
+@define-color es_dark_teal_900 #0a2d29;
+@define-color es_dark_teal_950 #0b2320;
+@define-color es_dark_cyan_50 #d0f0fa;
+@define-color es_dark_cyan_100 #95e3f6;
+@define-color es_dark_cyan_200 #63cae9;
+@define-color es_dark_cyan_300 #3db8dc;
+@define-color es_dark_cyan_400 #239cc2;
+@define-color es_dark_cyan_500 #117b9b;
+@define-color es_dark_cyan_600 #0c6783;
+@define-color es_dark_cyan_700 #104f62;
+@define-color es_dark_cyan_800 #0c3b49;
+@define-color es_dark_cyan_900 #0b2932;
+@define-color es_dark_cyan_950 #0b2028;
+@define-color es_dark_purple_50 #e5c6fb;
+@define-color es_dark_purple_100 #d9aff5;
+@define-color es_dark_purple_200 #c993ef;
+@define-color es_dark_purple_300 #b168e8;
+@define-color es_dark_purple_400 #a26fce;
+@define-color es_dark_purple_500 #7a2db9;
+@define-color es_dark_purple_600 #622195;
+@define-color es_dark_purple_700 #491870;
+@define-color es_dark_purple_800 #391457;
+@define-color es_dark_purple_900 #2c1042;
+@define-color es_dark_purple_950 #23132f;
+@define-color es_dark_pink_50 #ffbbe4;
+@define-color es_dark_pink_100 #f69ad1;
+@define-color es_dark_pink_200 #ed77be;
+@define-color es_dark_pink_300 #e359ab;
+@define-color es_dark_pink_400 #cb5d9e;
+@define-color es_dark_pink_500 #ac377d;
+@define-color es_dark_pink_600 #892660;
+@define-color es_dark_pink_700 #6f1d4d;
+@define-color es_dark_pink_800 #5b183f;
+@define-color es_dark_pink_900 #42132f;
+@define-color es_dark_pink_950 #2e0f22;
+@define-color es_dark_violet_50 #d0c2ff;
+@define-color es_dark_violet_100 #c2b0fc;
+@define-color es_dark_violet_200 #baa8f5;
+@define-color es_dark_violet_300 #9175f0;
+@define-color es_dark_violet_400 #6c4dd5;
+@define-color es_dark_violet_500 #593bbf;
+@define-color es_dark_violet_600 #403397;
+@define-color es_dark_violet_700 #423691;
+@define-color es_dark_violet_800 #3c2a92;
+@define-color es_dark_violet_900 #2f236c;
+@define-color es_dark_violet_950 #1e1646;
+@define-color es_dark_gray_alpha_50 rgba(255, 255, 255, 0.969);
+@define-color es_dark_gray_alpha_100 rgba(255, 255, 255, 0.831);
+@define-color es_dark_gray_alpha_200 rgba(255, 255, 255, 0.659);
+@define-color es_dark_gray_alpha_300 rgba(255, 255, 255, 0.561);
+@define-color es_dark_gray_alpha_400 rgba(255, 255, 255, 0.424);
+@define-color es_dark_gray_alpha_450 rgba(255, 255, 255, 0.275);
+@define-color es_dark_gray_alpha_500 rgba(255, 255, 255, 0.184);
+@define-color es_dark_gray_alpha_600 rgba(255, 255, 255, 0.141);
+@define-color es_dark_gray_alpha_700 rgba(255, 255, 255, 0.078);
+@define-color es_dark_gray_alpha_800 rgba(255, 255, 255, 0.055);
+@define-color es_dark_gray_alpha_900 rgba(255, 255, 255, 0.035);
+@define-color es_dark_gray_alpha_950 rgba(0, 0, 0, 0.039);
+
+/* semantic */
+@define-color es_surface_base #171717;  /* darkMode/gray/950 */
+@define-color es_surface_gray_1 #1f1f1f;  /* darkMode/gray/900 */
+@define-color es_surface_gray_2 #292929;  /* darkMode/gray/700 */
+@define-color es_surface_gray_3 #383838;  /* darkMode/gray/600 */
+@define-color es_surface_gray_4 #424242;  /* darkMode/gray/500 */
+@define-color es_surface_gray_5 #575757;  /* darkMode/gray/450 */
+@define-color es_surface_gray_6 #7a7a7a;  /* darkMode/gray/400 */
+@define-color es_surface_gray_7 #999999;  /* darkMode/gray/300 */
+@define-color es_surface_gray_8 #afafaf;  /* darkMode/gray/200 */
+@define-color es_surface_gray_9 #d9d9d9;  /* darkMode/gray/100 */
+@define-color es_surface_gray_10 #f8f8f8;  /* darkMode/gray/50 */
+@define-color es_surface_sidebar rgba(255, 255, 255, 0);  /* neutral/transparent */
+@define-color es_surface_elevation_1 #1f1f1f;  /* darkMode/gray/900 */
+@define-color es_surface_elevation_2 #242424;  /* darkMode/gray/800 */
+@define-color es_surface_elevation_3 #383838;  /* darkMode/gray/600 */
+@define-color es_surface_red_1 #391416;  /* darkMode/red/950 */
+@define-color es_surface_red_2 #592222;  /* darkMode/red/900 */
+@define-color es_surface_red_3 #742a2a;  /* darkMode/red/800 */
+@define-color es_surface_red_4 #852929;  /* darkMode/red/700 */
+@define-color es_surface_red_5 #8e2e2e;  /* darkMode/red/600 */
+@define-color es_surface_red_6 #b03030;  /* darkMode/red/500 */
+@define-color es_surface_red_7 #c23838;  /* darkMode/red/400 */
+@define-color es_surface_red_8 #eb4c4c;  /* darkMode/red/300 */
+@define-color es_surface_red_9 #ff7575;  /* darkMode/red/200 */
+@define-color es_surface_red_10 #ffc1c1;  /* darkMode/red/100 */
+@define-color es_surface_blue_1 #0f233d;  /* darkMode/blue/950 */
+@define-color es_surface_blue_2 #0a2e5c;  /* darkMode/blue/900 */
+@define-color es_surface_blue_3 #063465;  /* darkMode/blue/800 */
+@define-color es_surface_blue_4 #074783;  /* darkMode/blue/700 */
+@define-color es_surface_blue_5 #0c59a2;  /* darkMode/blue/600 */
+@define-color es_surface_blue_6 #1c6ec4;  /* darkMode/blue/500 */
+@define-color es_surface_blue_7 #2480cc;  /* darkMode/blue/400 */
+@define-color es_surface_blue_8 #349bef;  /* darkMode/blue/300 */
+@define-color es_surface_blue_9 #76bef9;  /* darkMode/blue/200 */
+@define-color es_surface_blue_10 #add2f5;  /* darkMode/blue/100 */
+@define-color es_surface_green_1 #072716;  /* darkMode/green/950 */
+@define-color es_surface_green_2 #0e3521;  /* darkMode/green/900 */
+@define-color es_surface_green_3 #0b4229;  /* darkMode/green/800 */
+@define-color es_surface_green_4 #085934;  /* darkMode/green/700 */
+@define-color es_surface_green_5 #077241;  /* darkMode/green/600 */
+@define-color es_surface_green_6 #127846;  /* darkMode/green/500 */
+@define-color es_surface_green_7 #128251;  /* darkMode/green/400 */
+@define-color es_surface_green_8 #369768;  /* darkMode/green/300 */
+@define-color es_surface_green_9 #7dc5a2;  /* darkMode/green/200 */
+@define-color es_surface_green_10 #9be6c1;  /* darkMode/green/100 */
+@define-color es_surface_amber_1 #331c06;  /* darkMode/amber/950 */
+@define-color es_surface_amber_2 #452608;  /* darkMode/amber/900 */
+@define-color es_surface_amber_3 #5a2d07;  /* darkMode/amber/800 */
+@define-color es_surface_amber_4 #753a08;  /* darkMode/amber/700 */
+@define-color es_surface_amber_5 #985315;  /* darkMode/amber/600 */
+@define-color es_surface_amber_6 #af5e0d;  /* darkMode/amber/500 */
+@define-color es_surface_amber_7 #bd660e;  /* darkMode/amber/400 */
+@define-color es_surface_amber_8 #c67516;  /* darkMode/amber/300 */
+@define-color es_surface_amber_9 #e9a143;  /* darkMode/amber/200 */
+@define-color es_surface_amber_10 #f4c25f;  /* darkMode/amber/100 */
+@define-color es_surface_violet_1 #1e1646;  /* darkMode/violet/950 */
+@define-color es_surface_violet_2 #2f236c;  /* darkMode/violet/900 */
+@define-color es_surface_violet_3 #3c2a92;  /* darkMode/violet/800 */
+@define-color es_surface_violet_4 #423691;  /* darkMode/violet/700 */
+@define-color es_surface_violet_5 #403397;  /* darkMode/violet/600 */
+@define-color es_surface_violet_6 #593bbf;  /* darkMode/violet/500 */
+@define-color es_surface_violet_7 #6c4dd5;  /* darkMode/violet/400 */
+@define-color es_surface_violet_8 #9175f0;  /* darkMode/violet/300 */
+@define-color es_surface_violet_9 #baa8f5;  /* darkMode/violet/200 */
+@define-color es_surface_violet_10 #c2b0fc;  /* darkMode/violet/100 */
+@define-color es_surface_yellow_1 #261d03;  /* darkMode/yellow/950 */
+@define-color es_surface_yellow_2 #3a2c04;  /* darkMode/yellow/900 */
+@define-color es_surface_yellow_3 #5b4605;  /* darkMode/yellow/800 */
+@define-color es_surface_yellow_4 #705606;  /* darkMode/yellow/700 */
+@define-color es_surface_yellow_5 #997809;  /* darkMode/yellow/600 */
+@define-color es_surface_yellow_6 #9c7e1b;  /* darkMode/yellow/500 */
+@define-color es_surface_yellow_7 #bb9729;  /* darkMode/yellow/400 */
+@define-color es_surface_yellow_8 #ecc02e;  /* darkMode/yellow/300 */
+@define-color es_surface_yellow_9 #f8d76a;  /* darkMode/yellow/200 */
+@define-color es_surface_yellow_10 #ffe386;  /* darkMode/yellow/100 */
+@define-color es_surface_orange_1 #2b1708;  /* darkMode/orange/950 */
+@define-color es_surface_orange_2 #361c09;  /* darkMode/orange/900 */
+@define-color es_surface_orange_3 #532707;  /* darkMode/orange/800 */
+@define-color es_surface_orange_4 #683108;  /* darkMode/orange/700 */
+@define-color es_surface_orange_5 #823906;  /* darkMode/orange/600 */
+@define-color es_surface_orange_6 #984509;  /* darkMode/orange/500 */
+@define-color es_surface_orange_7 #e16915;  /* darkMode/orange/400 */
+@define-color es_surface_orange_8 #e3701c;  /* darkMode/orange/300 */
+@define-color es_surface_orange_9 #fa8a40;  /* darkMode/orange/200 */
+@define-color es_surface_orange_10 #ffa873;  /* darkMode/orange/100 */
+@define-color es_surface_teal_1 #0b2320;  /* darkMode/teal/950 */
+@define-color es_surface_teal_2 #0a2d29;  /* darkMode/teal/900 */
+@define-color es_surface_teal_3 #0a3a35;  /* darkMode/teal/800 */
+@define-color es_surface_teal_4 #0c4942;  /* darkMode/teal/700 */
+@define-color es_surface_teal_5 #145b54;  /* darkMode/teal/600 */
+@define-color es_surface_teal_6 #1c7169;  /* darkMode/teal/500 */
+@define-color es_surface_teal_7 #2da094;  /* darkMode/teal/400 */
+@define-color es_surface_teal_8 #27bcac;  /* darkMode/teal/300 */
+@define-color es_surface_teal_9 #51decf;  /* darkMode/teal/200 */
+@define-color es_surface_teal_10 #7ef3e7;  /* darkMode/teal/100 */
+@define-color es_surface_cyan_1 #0b2028;  /* darkMode/cyan/950 */
+@define-color es_surface_cyan_2 #0b2932;  /* darkMode/cyan/900 */
+@define-color es_surface_cyan_3 #0c3b49;  /* darkMode/cyan/800 */
+@define-color es_surface_cyan_4 #104f62;  /* darkMode/cyan/700 */
+@define-color es_surface_cyan_5 #0c6783;  /* darkMode/cyan/600 */
+@define-color es_surface_cyan_6 #117b9b;  /* darkMode/cyan/500 */
+@define-color es_surface_cyan_7 #239cc2;  /* darkMode/cyan/400 */
+@define-color es_surface_cyan_8 #3db8dc;  /* darkMode/cyan/300 */
+@define-color es_surface_cyan_9 #63cae9;  /* darkMode/cyan/200 */
+@define-color es_surface_cyan_10 #95e3f6;  /* darkMode/cyan/100 */
+@define-color es_surface_purple_1 #23132f;  /* darkMode/purple/950 */
+@define-color es_surface_purple_2 #2c1042;  /* darkMode/purple/900 */
+@define-color es_surface_purple_3 #391457;  /* darkMode/purple/800 */
+@define-color es_surface_purple_4 #491870;  /* darkMode/purple/700 */
+@define-color es_surface_purple_5 #622195;  /* darkMode/purple/600 */
+@define-color es_surface_purple_6 #7a2db9;  /* darkMode/purple/500 */
+@define-color es_surface_purple_7 #a26fce;  /* darkMode/purple/400 */
+@define-color es_surface_purple_8 #b168e8;  /* darkMode/purple/300 */
+@define-color es_surface_purple_9 #c993ef;  /* darkMode/purple/200 */
+@define-color es_surface_purple_10 #d9aff5;  /* darkMode/purple/100 */
+@define-color es_surface_pink_1 #2e0f22;  /* darkMode/pink/950 */
+@define-color es_surface_pink_2 #42132f;  /* darkMode/pink/900 */
+@define-color es_surface_pink_3 #5b183f;  /* darkMode/pink/800 */
+@define-color es_surface_pink_4 #6f1d4d;  /* darkMode/pink/700 */
+@define-color es_surface_pink_5 #892660;  /* darkMode/pink/600 */
+@define-color es_surface_pink_6 #ac377d;  /* darkMode/pink/500 */
+@define-color es_surface_pink_7 #cb5d9e;  /* darkMode/pink/400 */
+@define-color es_surface_pink_8 #e359ab;  /* darkMode/pink/300 */
+@define-color es_surface_pink_9 #ed77be;  /* darkMode/pink/200 */
+@define-color es_surface_pink_10 #f69ad1;  /* darkMode/pink/100 */
+@define-color es_surface_alpha_base rgba(0, 0, 0, 0.039);  /* darkMode/gray-alpha/950 */
+@define-color es_surface_alpha_gray_1 rgba(255, 255, 255, 0.055);  /* darkMode/gray-alpha/800 */
+@define-color es_surface_alpha_gray_2 rgba(255, 255, 255, 0.078);  /* darkMode/gray-alpha/700 */
+@define-color es_surface_alpha_gray_3 rgba(255, 255, 255, 0.141);  /* darkMode/gray-alpha/600 */
+@define-color es_surface_alpha_gray_4 rgba(255, 255, 255, 0.184);  /* darkMode/gray-alpha/500 */
+@define-color es_surface_alpha_gray_5 rgba(255, 255, 255, 0.275);  /* darkMode/gray-alpha/450 */
+@define-color es_surface_alpha_gray_6 rgba(255, 255, 255, 0.424);  /* darkMode/gray-alpha/400 */
+@define-color es_surface_alpha_gray_7 rgba(255, 255, 255, 0.561);  /* darkMode/gray-alpha/300 */
+@define-color es_surface_alpha_gray_8 rgba(255, 255, 255, 0.659);  /* darkMode/gray-alpha/200 */
+@define-color es_surface_alpha_gray_9 rgba(255, 255, 255, 0.831);  /* darkMode/gray-alpha/100 */
+@define-color es_surface_alpha_gray_10 rgba(255, 255, 255, 0.969);  /* darkMode/gray-alpha/50 */
+@define-color es_surface_alpha_sidebar rgba(0, 0, 0, 0.039);  /* darkMode/gray-alpha/950 */
+@define-color es_surface_alpha_elevation_1 rgba(255, 255, 255, 0.035);  /* darkMode/gray-alpha/900 */
+@define-color es_surface_alpha_elevation_2 rgba(255, 255, 255, 0.055);  /* darkMode/gray-alpha/800 */
+@define-color es_surface_alpha_elevation_3 rgba(255, 255, 255, 0.141);  /* darkMode/gray-alpha/600 */
+@define-color es_ink_base #171717;  /* darkMode/gray/950 */
+@define-color es_ink_gray_1 #242424;  /* darkMode/gray/800 */
+@define-color es_ink_gray_2 #383838;  /* darkMode/gray/600 */
+@define-color es_ink_gray_3 #424242;  /* darkMode/gray/500 */
+@define-color es_ink_gray_4 #7a7a7a;  /* darkMode/gray/400 */
+@define-color es_ink_gray_5 #7a7a7a;  /* darkMode/gray/400 */
+@define-color es_ink_gray_6 #999999;  /* darkMode/gray/300 */
+@define-color es_ink_gray_7 #afafaf;  /* darkMode/gray/200 */
+@define-color es_ink_gray_8 #d9d9d9;  /* darkMode/gray/100 */
+@define-color es_ink_gray_9 #f8f8f8;  /* darkMode/gray/50 */
+@define-color es_ink_red_1 #742a2a;  /* darkMode/red/800 */
+@define-color es_ink_red_2 #852929;  /* darkMode/red/700 */
+@define-color es_ink_red_3 #8e2e2e;  /* darkMode/red/600 */
+@define-color es_ink_red_4 #b03030;  /* darkMode/red/500 */
+@define-color es_ink_red_5 #c23838;  /* darkMode/red/400 */
+@define-color es_ink_red_6 #eb4c4c;  /* darkMode/red/300 */
+@define-color es_ink_red_7 #ff7575;  /* darkMode/red/200 */
+@define-color es_ink_red_8 #ffc1c1;  /* darkMode/red/100 */
+@define-color es_ink_red_9 #ffdede;  /* darkMode/red/50 */
+@define-color es_ink_blue_1 #063465;  /* darkMode/blue/800 */
+@define-color es_ink_blue_2 #074783;  /* darkMode/blue/700 */
+@define-color es_ink_blue_3 #0c59a2;  /* darkMode/blue/600 */
+@define-color es_ink_blue_4 #1c6ec4;  /* darkMode/blue/500 */
+@define-color es_ink_blue_5 #2480cc;  /* darkMode/blue/400 */
+@define-color es_ink_blue_6 #349bef;  /* darkMode/blue/300 */
+@define-color es_ink_blue_7 #76bef9;  /* darkMode/blue/200 */
+@define-color es_ink_blue_8 #add2f5;  /* darkMode/blue/100 */
+@define-color es_ink_blue_9 #c9e0f5;  /* darkMode/blue/50 */
+@define-color es_ink_green_1 #0b4229;  /* darkMode/green/800 */
+@define-color es_ink_green_2 #085934;  /* darkMode/green/700 */
+@define-color es_ink_green_3 #077241;  /* darkMode/green/600 */
+@define-color es_ink_green_4 #127846;  /* darkMode/green/500 */
+@define-color es_ink_green_5 #128251;  /* darkMode/green/400 */
+@define-color es_ink_green_6 #369768;  /* darkMode/green/300 */
+@define-color es_ink_green_7 #7dc5a2;  /* darkMode/green/200 */
+@define-color es_ink_green_8 #9be6c1;  /* darkMode/green/100 */
+@define-color es_ink_green_9 #c8f3de;  /* darkMode/green/50 */
+@define-color es_ink_amber_1 #5a2d07;  /* darkMode/amber/800 */
+@define-color es_ink_amber_2 #753a08;  /* darkMode/amber/700 */
+@define-color es_ink_amber_3 #985315;  /* darkMode/amber/600 */
+@define-color es_ink_amber_4 #af5e0d;  /* darkMode/amber/500 */
+@define-color es_ink_amber_5 #bd660e;  /* darkMode/amber/400 */
+@define-color es_ink_amber_6 #c67516;  /* darkMode/amber/300 */
+@define-color es_ink_amber_7 #e9a143;  /* darkMode/amber/200 */
+@define-color es_ink_amber_8 #f4c25f;  /* darkMode/amber/100 */
+@define-color es_ink_amber_9 #ffe59a;  /* darkMode/amber/50 */
+@define-color es_ink_violet_1 #3c2a92;  /* darkMode/violet/800 */
+@define-color es_ink_violet_2 #423691;  /* darkMode/violet/700 */
+@define-color es_ink_violet_3 #403397;  /* darkMode/violet/600 */
+@define-color es_ink_violet_4 #593bbf;  /* darkMode/violet/500 */
+@define-color es_ink_violet_5 #6c4dd5;  /* darkMode/violet/400 */
+@define-color es_ink_violet_6 #9175f0;  /* darkMode/violet/300 */
+@define-color es_ink_violet_7 #baa8f5;  /* darkMode/violet/200 */
+@define-color es_ink_violet_8 #c2b0fc;  /* darkMode/violet/100 */
+@define-color es_ink_violet_9 #d0c2ff;  /* darkMode/violet/50 */
+@define-color es_ink_yellow_1 #5b4605;  /* darkMode/yellow/800 */
+@define-color es_ink_yellow_2 #705606;  /* darkMode/yellow/700 */
+@define-color es_ink_yellow_3 #997809;  /* darkMode/yellow/600 */
+@define-color es_ink_yellow_4 #9c7e1b;  /* darkMode/yellow/500 */
+@define-color es_ink_yellow_5 #bb9729;  /* darkMode/yellow/400 */
+@define-color es_ink_yellow_6 #ecc02e;  /* darkMode/yellow/300 */
+@define-color es_ink_yellow_7 #f8d76a;  /* darkMode/yellow/200 */
+@define-color es_ink_yellow_8 #ffe386;  /* darkMode/yellow/100 */
+@define-color es_ink_yellow_9 #ffeeb8;  /* darkMode/yellow/50 */
+@define-color es_ink_orange_1 #532707;  /* darkMode/orange/800 */
+@define-color es_ink_orange_2 #683108;  /* darkMode/orange/700 */
+@define-color es_ink_orange_3 #823906;  /* darkMode/orange/600 */
+@define-color es_ink_orange_4 #984509;  /* darkMode/orange/500 */
+@define-color es_ink_orange_5 #e16915;  /* darkMode/orange/400 */
+@define-color es_ink_orange_6 #e3701c;  /* darkMode/orange/300 */
+@define-color es_ink_orange_7 #fa8a40;  /* darkMode/orange/200 */
+@define-color es_ink_orange_8 #ffa873;  /* darkMode/orange/100 */
+@define-color es_ink_orange_9 #ffcdad;  /* darkMode/orange/50 */
+@define-color es_ink_teal_1 #0a3a35;  /* darkMode/teal/800 */
+@define-color es_ink_teal_2 #0c4942;  /* darkMode/teal/700 */
+@define-color es_ink_teal_3 #145b54;  /* darkMode/teal/600 */
+@define-color es_ink_teal_4 #1c7169;  /* darkMode/teal/500 */
+@define-color es_ink_teal_5 #2da094;  /* darkMode/teal/400 */
+@define-color es_ink_teal_6 #27bcac;  /* darkMode/teal/300 */
+@define-color es_ink_teal_7 #51decf;  /* darkMode/teal/200 */
+@define-color es_ink_teal_8 #7ef3e7;  /* darkMode/teal/100 */
+@define-color es_ink_teal_9 #a0f7ed;  /* darkMode/teal/50 */
+@define-color es_ink_cyan_1 #0c3b49;  /* darkMode/cyan/800 */
+@define-color es_ink_cyan_2 #104f62;  /* darkMode/cyan/700 */
+@define-color es_ink_cyan_3 #0c6783;  /* darkMode/cyan/600 */
+@define-color es_ink_cyan_4 #117b9b;  /* darkMode/cyan/500 */
+@define-color es_ink_cyan_5 #239cc2;  /* darkMode/cyan/400 */
+@define-color es_ink_cyan_6 #3db8dc;  /* darkMode/cyan/300 */
+@define-color es_ink_cyan_7 #63cae9;  /* darkMode/cyan/200 */
+@define-color es_ink_cyan_8 #95e3f6;  /* darkMode/cyan/100 */
+@define-color es_ink_cyan_9 #d0f0fa;  /* darkMode/cyan/50 */
+@define-color es_ink_purple_1 #391457;  /* darkMode/purple/800 */
+@define-color es_ink_purple_2 #491870;  /* darkMode/purple/700 */
+@define-color es_ink_purple_3 #622195;  /* darkMode/purple/600 */
+@define-color es_ink_purple_4 #7a2db9;  /* darkMode/purple/500 */
+@define-color es_ink_purple_5 #a26fce;  /* darkMode/purple/400 */
+@define-color es_ink_purple_6 #b168e8;  /* darkMode/purple/300 */
+@define-color es_ink_purple_7 #c993ef;  /* darkMode/purple/200 */
+@define-color es_ink_purple_8 #d9aff5;  /* darkMode/purple/100 */
+@define-color es_ink_purple_9 #e5c6fb;  /* darkMode/purple/50 */
+@define-color es_ink_pink_1 #5b183f;  /* darkMode/pink/800 */
+@define-color es_ink_pink_2 #6f1d4d;  /* darkMode/pink/700 */
+@define-color es_ink_pink_3 #892660;  /* darkMode/pink/600 */
+@define-color es_ink_pink_4 #ac377d;  /* darkMode/pink/500 */
+@define-color es_ink_pink_5 #cb5d9e;  /* darkMode/pink/400 */
+@define-color es_ink_pink_6 #e359ab;  /* darkMode/pink/300 */
+@define-color es_ink_pink_7 #ed77be;  /* darkMode/pink/200 */
+@define-color es_ink_pink_8 #f69ad1;  /* darkMode/pink/100 */
+@define-color es_ink_pink_9 #ffbbe4;  /* darkMode/pink/50 */
+@define-color es_ink_blue_link #1c6ec4;  /* darkMode/blue/500 */
+@define-color es_outline_base #171717;  /* darkMode/gray/950 */
+@define-color es_outline_gray_1 #242424;  /* darkMode/gray/800 */
+@define-color es_outline_gray_2 #383838;  /* darkMode/gray/600 */
+@define-color es_outline_gray_3 #424242;  /* darkMode/gray/500 */
+@define-color es_outline_gray_4 #575757;  /* darkMode/gray/450 */
+@define-color es_outline_gray_5 #7a7a7a;  /* darkMode/gray/400 */
+@define-color es_outline_gray_6 #999999;  /* darkMode/gray/300 */
+@define-color es_outline_gray_7 #ededed;  /* lightMode/gray/200 */
+@define-color es_outline_gray_8 #f3f3f3;  /* lightMode/gray/100 */
+@define-color es_outline_gray_9 #f8f8f8;  /* lightMode/gray/50 */
+@define-color es_outline_red_1 #592222;  /* darkMode/red/900 */
+@define-color es_outline_red_2 #742a2a;  /* darkMode/red/800 */
+@define-color es_outline_red_3 #852929;  /* darkMode/red/700 */
+@define-color es_outline_red_4 #8e2e2e;  /* darkMode/red/600 */
+@define-color es_outline_red_5 #b03030;  /* darkMode/red/500 */
+@define-color es_outline_red_6 #c23838;  /* darkMode/red/400 */
+@define-color es_outline_red_7 #eb4c4c;  /* darkMode/red/300 */
+@define-color es_outline_red_8 #ff7575;  /* darkMode/red/200 */
+@define-color es_outline_red_9 #ffc1c1;  /* darkMode/red/100 */
+@define-color es_outline_red_10 #ffdede;  /* darkMode/red/50 */
+@define-color es_outline_blue_1 #0a2e5c;  /* darkMode/blue/900 */
+@define-color es_outline_blue_2 #063465;  /* darkMode/blue/800 */
+@define-color es_outline_blue_3 #074783;  /* darkMode/blue/700 */
+@define-color es_outline_blue_4 #0c59a2;  /* darkMode/blue/600 */
+@define-color es_outline_blue_5 #1c6ec4;  /* darkMode/blue/500 */
+@define-color es_outline_blue_6 #2480cc;  /* darkMode/blue/400 */
+@define-color es_outline_blue_7 #349bef;  /* darkMode/blue/300 */
+@define-color es_outline_blue_8 #76bef9;  /* darkMode/blue/200 */
+@define-color es_outline_blue_9 #add2f5;  /* darkMode/blue/100 */
+@define-color es_outline_blue_10 #c9e0f5;  /* darkMode/blue/50 */
+@define-color es_outline_green_1 #0e3521;  /* darkMode/green/900 */
+@define-color es_outline_green_2 #0b4229;  /* darkMode/green/800 */
+@define-color es_outline_green_3 #085934;  /* darkMode/green/700 */
+@define-color es_outline_green_4 #077241;  /* darkMode/green/600 */
+@define-color es_outline_green_5 #127846;  /* darkMode/green/500 */
+@define-color es_outline_green_6 #128251;  /* darkMode/green/400 */
+@define-color es_outline_green_7 #369768;  /* darkMode/green/300 */
+@define-color es_outline_green_8 #7dc5a2;  /* darkMode/green/200 */
+@define-color es_outline_green_9 #9be6c1;  /* darkMode/green/100 */
+@define-color es_outline_green_10 #c8f3de;  /* darkMode/green/50 */
+@define-color es_outline_amber_1 #452608;  /* darkMode/amber/900 */
+@define-color es_outline_amber_2 #5a2d07;  /* darkMode/amber/800 */
+@define-color es_outline_amber_3 #753a08;  /* darkMode/amber/700 */
+@define-color es_outline_amber_4 #985315;  /* darkMode/amber/600 */
+@define-color es_outline_amber_5 #af5e0d;  /* darkMode/amber/500 */
+@define-color es_outline_amber_6 #bd660e;  /* darkMode/amber/400 */
+@define-color es_outline_amber_7 #c67516;  /* darkMode/amber/300 */
+@define-color es_outline_amber_8 #e9a143;  /* darkMode/amber/200 */
+@define-color es_outline_amber_9 #f4c25f;  /* darkMode/amber/100 */
+@define-color es_outline_amber_10 #ffe59a;  /* darkMode/amber/50 */
+@define-color es_outline_violet_1 #2f236c;  /* darkMode/violet/900 */
+@define-color es_outline_violet_2 #3c2a92;  /* darkMode/violet/800 */
+@define-color es_outline_violet_3 #423691;  /* darkMode/violet/700 */
+@define-color es_outline_violet_4 #403397;  /* darkMode/violet/600 */
+@define-color es_outline_violet_5 #593bbf;  /* darkMode/violet/500 */
+@define-color es_outline_violet_6 #6c4dd5;  /* darkMode/violet/400 */
+@define-color es_outline_violet_7 #9175f0;  /* darkMode/violet/300 */
+@define-color es_outline_violet_8 #baa8f5;  /* darkMode/violet/200 */
+@define-color es_outline_violet_9 #c2b0fc;  /* darkMode/violet/100 */
+@define-color es_outline_violet_10 #d0c2ff;  /* darkMode/violet/50 */
+@define-color es_outline_yellow_1 #3a2c04;  /* darkMode/yellow/900 */
+@define-color es_outline_yellow_2 #5b4605;  /* darkMode/yellow/800 */
+@define-color es_outline_yellow_3 #705606;  /* darkMode/yellow/700 */
+@define-color es_outline_yellow_4 #997809;  /* darkMode/yellow/600 */
+@define-color es_outline_yellow_5 #9c7e1b;  /* darkMode/yellow/500 */
+@define-color es_outline_yellow_6 #bb9729;  /* darkMode/yellow/400 */
+@define-color es_outline_yellow_7 #ecc02e;  /* darkMode/yellow/300 */
+@define-color es_outline_yellow_8 #f8d76a;  /* darkMode/yellow/200 */
+@define-color es_outline_yellow_9 #ffe386;  /* darkMode/yellow/100 */
+@define-color es_outline_yellow_10 #ffeeb8;  /* darkMode/yellow/50 */
+@define-color es_outline_orange_1 #361c09;  /* darkMode/orange/900 */
+@define-color es_outline_orange_2 #532707;  /* darkMode/orange/800 */
+@define-color es_outline_orange_3 #683108;  /* darkMode/orange/700 */
+@define-color es_outline_orange_4 #823906;  /* darkMode/orange/600 */
+@define-color es_outline_orange_5 #984509;  /* darkMode/orange/500 */
+@define-color es_outline_orange_6 #e16915;  /* darkMode/orange/400 */
+@define-color es_outline_orange_7 #e3701c;  /* darkMode/orange/300 */
+@define-color es_outline_orange_8 #fa8a40;  /* darkMode/orange/200 */
+@define-color es_outline_orange_9 #ffa873;  /* darkMode/orange/100 */
+@define-color es_outline_orange_10 #ffcdad;  /* darkMode/orange/50 */
+@define-color es_outline_teal_1 #0a2d29;  /* darkMode/teal/900 */
+@define-color es_outline_teal_2 #0a3a35;  /* darkMode/teal/800 */
+@define-color es_outline_teal_3 #0c4942;  /* darkMode/teal/700 */
+@define-color es_outline_teal_4 #145b54;  /* darkMode/teal/600 */
+@define-color es_outline_teal_5 #1c7169;  /* darkMode/teal/500 */
+@define-color es_outline_teal_6 #2da094;  /* darkMode/teal/400 */
+@define-color es_outline_teal_7 #27bcac;  /* darkMode/teal/300 */
+@define-color es_outline_teal_8 #51decf;  /* darkMode/teal/200 */
+@define-color es_outline_teal_9 #7ef3e7;  /* darkMode/teal/100 */
+@define-color es_outline_teal_10 #a0f7ed;  /* darkMode/teal/50 */
+@define-color es_outline_cyan_1 #0b2932;  /* darkMode/cyan/900 */
+@define-color es_outline_cyan_2 #0c3b49;  /* darkMode/cyan/800 */
+@define-color es_outline_cyan_3 #104f62;  /* darkMode/cyan/700 */
+@define-color es_outline_cyan_4 #0c6783;  /* darkMode/cyan/600 */
+@define-color es_outline_cyan_5 #117b9b;  /* darkMode/cyan/500 */
+@define-color es_outline_cyan_6 #239cc2;  /* darkMode/cyan/400 */
+@define-color es_outline_cyan_7 #3db8dc;  /* darkMode/cyan/300 */
+@define-color es_outline_cyan_8 #63cae9;  /* darkMode/cyan/200 */
+@define-color es_outline_cyan_9 #95e3f6;  /* darkMode/cyan/100 */
+@define-color es_outline_cyan_10 #d0f0fa;  /* darkMode/cyan/50 */
+@define-color es_outline_purple_1 #2c1042;  /* darkMode/purple/900 */
+@define-color es_outline_purple_2 #391457;  /* darkMode/purple/800 */
+@define-color es_outline_purple_3 #491870;  /* darkMode/purple/700 */
+@define-color es_outline_purple_4 #622195;  /* darkMode/purple/600 */
+@define-color es_outline_purple_5 #7a2db9;  /* darkMode/purple/500 */
+@define-color es_outline_purple_6 #a26fce;  /* darkMode/purple/400 */
+@define-color es_outline_purple_7 #b168e8;  /* darkMode/purple/300 */
+@define-color es_outline_purple_8 #c993ef;  /* darkMode/purple/200 */
+@define-color es_outline_purple_9 #d9aff5;  /* darkMode/purple/100 */
+@define-color es_outline_purple_10 #e5c6fb;  /* darkMode/purple/50 */
+@define-color es_outline_pink_1 #42132f;  /* darkMode/pink/900 */
+@define-color es_outline_pink_2 #5b183f;  /* darkMode/pink/800 */
+@define-color es_outline_pink_3 #6f1d4d;  /* darkMode/pink/700 */
+@define-color es_outline_pink_4 #892660;  /* darkMode/pink/600 */
+@define-color es_outline_pink_5 #ac377d;  /* darkMode/pink/500 */
+@define-color es_outline_pink_6 #cb5d9e;  /* darkMode/pink/400 */
+@define-color es_outline_pink_7 #e359ab;  /* darkMode/pink/300 */
+@define-color es_outline_pink_8 #ed77be;  /* darkMode/pink/200 */
+@define-color es_outline_pink_9 #f69ad1;  /* darkMode/pink/100 */
+@define-color es_outline_pink_10 #ffbbe4;  /* darkMode/pink/50 */
+@define-color es_outline_elevation_1 #292929;  /* darkMode/gray/700 */
+@define-color es_outline_elevation_2 #383838;  /* darkMode/gray/600 */
+@define-color es_outline_alpha_base rgba(0, 0, 0, 0.039);  /* darkMode/gray-alpha/950 */
+@define-color es_outline_alpha_gray_1 rgba(255, 255, 255, 0.055);  /* darkMode/gray-alpha/800 */
+@define-color es_outline_alpha_gray_2 rgba(255, 255, 255, 0.141);  /* darkMode/gray-alpha/600 */
+@define-color es_outline_alpha_gray_3 rgba(255, 255, 255, 0.184);  /* darkMode/gray-alpha/500 */
+@define-color es_outline_alpha_gray_4 rgba(255, 255, 255, 0.275);  /* darkMode/gray-alpha/450 */
+@define-color es_outline_alpha_gray_5 rgba(255, 255, 255, 0.424);  /* darkMode/gray-alpha/400 */
+@define-color es_outline_alpha_gray_6 rgba(255, 255, 255, 0.561);  /* darkMode/gray-alpha/300 */
+@define-color es_outline_alpha_gray_7 rgba(255, 255, 255, 0.659);  /* darkMode/gray-alpha/200 */
+@define-color es_outline_alpha_gray_8 rgba(255, 255, 255, 0.831);  /* darkMode/gray-alpha/100 */
+@define-color es_outline_alpha_gray_9 rgba(255, 255, 255, 0.969);  /* darkMode/gray-alpha/50 */
+@define-color es_outline_alpha_elevation_1 rgba(255, 255, 255, 0.078);  /* darkMode/gray-alpha/700 */
+@define-color es_outline_alpha_elevation_2 rgba(255, 255, 255, 0.141);  /* darkMode/gray-alpha/600 */
+
+/* espresso aliases */
+/* focus ring 3px rgba(70, 70, 70, 0.800) */
+@define-color es_focus rgba(70, 70, 70, 0.800);
+@define-color es_accent #1c6ec4;
+@define-color es_accent_hover #2480cc;
+@define-color es_accent_active #349bef;
+@define-color es_accent_fg #171717;
+@define-color es_destructive #c23838;
+@define-color es_destructive_fg #ff7575;
+@define-color es_destructive_hover #eb4c4c;
+@define-color es_success #128251;
+@define-color es_warning #af5e0d;
+@define-color es_error #c23838;
+@define-color es_focus_ring rgba(70, 70, 70, 0.800);
+/* focus width 3px; dark true */
+
+/* gtk and libadwaita names */
+@define-color theme_bg_color #171717;
+@define-color theme_fg_color #d9d9d9;
+@define-color theme_base_color #171717;
+@define-color theme_text_color #d9d9d9;
+@define-color theme_selected_bg_color #1c6ec4;
+@define-color theme_selected_fg_color #171717;
+@define-color theme_unfocused_bg_color #171717;
+@define-color theme_unfocused_fg_color #999999;
+@define-color theme_unfocused_text_color #999999;
+@define-color theme_unfocused_base_color #171717;
+@define-color theme_unfocused_selected_bg_color #1c6ec4;
+@define-color theme_unfocused_selected_fg_color #171717;
+@define-color borders #242424;
+@define-color unfocused_borders #242424;
+@define-color insensitive_bg_color #1f1f1f;
+@define-color insensitive_fg_color #424242;
+@define-color insensitive_base_color #171717;
+@define-color unfocused_insensitive_color #424242;
+@define-color accent_color #1c6ec4;
+@define-color success_color #128251;
+@define-color warning_color #af5e0d;
+@define-color error_color #c23838;
+@define-color content_view_bg #171717;
+@define-color text_view_bg #171717;
+@define-color window_bg_color #171717;
+@define-color window_fg_color #d9d9d9;
+@define-color view_bg_color #171717;
+@define-color view_fg_color #d9d9d9;
+@define-color headerbar_bg_color #171717;
+@define-color headerbar_fg_color #d9d9d9;
+@define-color headerbar_border_color #242424;
+@define-color headerbar_backdrop_color #171717;
+@define-color headerbar_shade_color #242424;
+@define-color card_bg_color #1f1f1f;
+@define-color card_fg_color #d9d9d9;
+@define-color card_shade_color #242424;
+@define-color popover_bg_color #1f1f1f;
+@define-color popover_fg_color #d9d9d9;
+@define-color popover_shade_color #242424;
+@define-color dialog_bg_color #171717;
+@define-color dialog_fg_color #d9d9d9;
+@define-color accent_bg_color #1c6ec4;
+@define-color accent_fg_color #171717;
+@define-color destructive_bg_color #c23838;
+@define-color destructive_fg_color #171717;
+@define-color destructive_color #c23838;
+@define-color error_bg_color #c23838;
+@define-color error_fg_color #171717;
+@define-color success_bg_color #128251;
+@define-color success_fg_color #171717;
+@define-color warning_bg_color #af5e0d;
+@define-color warning_fg_color #171717;
+@define-color sidebar_bg_color rgba(255, 255, 255, 0);
+@define-color sidebar_fg_color #d9d9d9;
+@define-color sidebar_backdrop_color rgba(255, 255, 255, 0);
+@define-color sidebar_shade_color #242424;
+@define-color secondary_sidebar_bg_color #171717;
+@define-color secondary_sidebar_fg_color #d9d9d9;
+@define-color secondary_sidebar_backdrop_color #171717;
+@define-color secondary_sidebar_shade_color #242424;
+@define-color shade_color #242424;
+@define-color scrollbar_outline_color #242424;
+@define-color thumbnail_bg_color #292929;
+@define-color thumbnail_fg_color #d9d9d9;

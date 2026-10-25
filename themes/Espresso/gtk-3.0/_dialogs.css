@@ -1,0 +1,159 @@
+/* dialogs pass: dialogs file chooser calendar views and infobar */
+
+/* gtk3 has no dialog node so the window background comes from _base */
+messagedialog {
+    background-color: @es_surface_base;
+    border: 1px solid @es_outline_gray_1;
+    border-radius: 12px;
+    box-shadow: inset 0px 0.25px 1.5px 0px #ffffff29, 0px 0px 1.5px 0px #00000026, 0px 0px 6px 2px #0000000a, 0px 6px 12px -2px #00000014;  /* elevation md */
+}
+
+messagedialog .titlebar {
+    background-color: transparent;
+    border-bottom: none;
+    box-shadow: none;
+}
+
+messagedialog .dialog-action-area {
+    border-top: 1px solid @es_outline_gray_1;
+    padding: 10px;
+}
+
+/* file chooser */
+
+filechooser .dialog-action-box {
+    border-top: 1px solid @es_outline_gray_1;
+    padding: 10px;
+}
+
+filechooser placessidebar {
+    background-color: @es_surface_sidebar;
+    border-right: 1px solid @es_outline_gray_1;
+}
+
+placessidebar row {
+    border-radius: 8px;
+    margin: 2px 8px;
+    padding: 6px 10px;
+}
+
+placessidebar row:hover {
+    background-color: @es_surface_gray_2;
+}
+
+placessidebar row:selected {
+    background-color: alpha(@es_accent, 0.14);
+    color: @es_ink_gray_8;
+    font-weight: 600;
+}
+
+placessidebar row:selected image {
+    color: @es_accent;
+}
+
+filechooser .view {
+    background-color: @es_surface_base;
+}
+
+/* calendar */
+
+calendar {
+    background-color: @es_surface_elevation_1;
+    border: 1px solid @es_outline_gray_1;
+    border-radius: 12px;
+    padding: 8px;
+}
+
+calendar.header {
+    border-bottom: 1px solid @es_outline_gray_1;
+    padding-bottom: 6px;
+    margin-bottom: 6px;
+}
+
+calendar.button {
+    min-height: 28px;
+    padding: 4px 8px;
+    color: @es_ink_gray_5;
+}
+
+calendar:selected {
+    background-color: @es_accent;
+    color: @es_accent_fg;
+    border-radius: 100px;
+}
+
+calendar:indeterminate {
+    color: @es_ink_gray_3;
+}
+
+calendar.highlight {
+    color: @es_accent;
+    font-weight: 600;
+}
+
+/* views */
+
+treeview.view {
+    background-color: @es_surface_base;
+    color: @es_ink_gray_8;
+}
+
+treeview.view:selected,
+treeview.view:selected:focus {
+    background-color: alpha(@es_accent, 0.12);
+    color: @es_ink_gray_8;
+}
+
+treeview.view header button {
+    background-color: @es_surface_gray_1;
+    border: none;
+    border-right: 1px solid @es_outline_gray_1;
+    border-bottom: 1px solid @es_outline_gray_1;
+    border-radius: 0;
+    padding: 6px 10px;
+    font-weight: 500;
+    box-shadow: none;
+}
+
+treeview.view header button:hover {
+    background-color: @es_surface_gray_2;
+}
+
+/* infobar: gtk3 paints the revealer box */
+
+infobar > revealer > box,
+infobar > revealer > box:backdrop {
+    border-radius: 8px;
+    border: 1px solid @es_outline_gray_1;
+    background-color: @es_surface_gray_1;
+}
+
+infobar.info > revealer > box,
+infobar.info > revealer > box:backdrop {
+    background-color: alpha(@es_accent, 0.10);
+    border-color: alpha(@es_accent, 0.30);
+}
+
+infobar.warning > revealer > box,
+infobar.warning > revealer > box:backdrop {
+    background-color: alpha(@es_warning, 0.12);
+    border-color: alpha(@es_warning, 0.35);
+}
+
+infobar.error > revealer > box,
+infobar.error > revealer > box:backdrop {
+    background-color: alpha(@es_error, 0.12);
+    border-color: alpha(@es_error, 0.35);
+}
+
+/* colorswatch stays native but flat */
+
+colorswatch {
+    border-radius: 6px;
+    border: 1px solid @es_outline_gray_2;
+}
+
+colorswatch:selected {
+    border-color: @es_accent;
+    box-shadow: 0 0 0 2px alpha(@es_accent, 0.35);
+}

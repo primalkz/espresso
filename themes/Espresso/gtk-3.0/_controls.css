@@ -1,0 +1,592 @@
+/* controls for gtk3: same 28px frappe sm geometry as gtk4 with every adwaita gradient state reset */
+
+button,
+button:backdrop,
+entry,
+entry:backdrop,
+spinbutton:not(.vertical),
+spinbutton:backdrop:not(.vertical),
+combobox > box > button.combo {
+    min-height: 28px;
+    padding: 0 8px;
+    border: none;
+    border-radius: 8px;
+    background-color: @es_surface_gray_2;
+    background-image: none;
+    box-shadow: none;
+    text-shadow: none;
+    -gtk-icon-shadow: none;
+    -gtk-outline-radius: 8px;
+    color: @es_ink_gray_8;
+    outline-offset: 1px;
+    transition: background-color 120ms ease, color 120ms ease;
+}
+
+button:hover,
+entry:hover,
+spinbutton:hover:not(.vertical) {
+    background-color: @es_surface_gray_3;
+    background-image: none;
+    box-shadow: none;
+}
+
+button:active,
+button:checked,
+button:backdrop:active,
+button:backdrop:checked {
+    background-color: @es_surface_gray_4;
+    background-image: none;
+    box-shadow: none;
+    color: @es_ink_gray_8;
+}
+
+button:disabled,
+button:backdrop:disabled,
+entry:disabled,
+entry:backdrop:disabled,
+spinbutton:disabled:not(.vertical),
+spinbutton:backdrop:disabled:not(.vertical) {
+    background-color: @es_surface_gray_1;
+    background-image: none;
+    box-shadow: none;
+    color: @es_ink_gray_4;
+}
+
+button:focus,
+entry:focus,
+spinbutton:focus:not(.vertical) {
+    outline: 2px solid @es_focus;
+    box-shadow: none;
+}
+
+button.image-button,
+button.popup.image-button {
+    min-width: 28px;
+    padding: 0;
+}
+
+button.text-button.image-button {
+    padding: 0 8px;
+}
+
+button.circular,
+button.circular:not(.flat):not(.osd):not(:checked):not(:active):not(:disabled):not(:backdrop),
+button.circular:hover:not(.osd):not(:checked):not(:active):not(:disabled):not(:backdrop) {
+    min-width: 28px;
+    padding: 0;
+    border: none;
+    border-radius: 100px;
+    -gtk-outline-radius: 100px;
+    background-color: @es_surface_gray_2;
+    background-image: none;
+    box-shadow: none;
+}
+
+button.circular:hover:not(.osd):not(:checked):not(:active):not(:disabled):not(:backdrop) {
+    background-color: @es_surface_gray_3;
+}
+
+button.flat,
+button.flat:backdrop,
+button.sidebar-button,
+button.sidebar-button:backdrop {
+    background-color: transparent;
+    background-image: none;
+}
+
+button.flat:hover,
+button.sidebar-button:hover {
+    background-color: @es_surface_gray_3;
+}
+
+button.flat:active,
+button.flat:checked {
+    background-color: @es_surface_gray_4;
+}
+
+button.flat:disabled,
+button.flat:backdrop:disabled {
+    background-color: transparent;
+}
+
+/* solid gray is frappe's primary */
+button.suggested-action,
+button.suggested-action:backdrop {
+    background-color: @es_surface_gray_10;
+    background-image: none;
+    color: @es_ink_base;
+}
+
+button.suggested-action:hover {
+    background-color: @es_surface_gray_9;
+    background-image: none;
+    color: @es_ink_base;
+}
+
+button.suggested-action:active,
+button.suggested-action:checked,
+button.suggested-action:backdrop:active,
+button.suggested-action:backdrop:checked {
+    background-color: @es_surface_gray_8;
+    background-image: none;
+    color: @es_ink_base;
+}
+
+button.destructive-action,
+button.destructive-action:backdrop {
+    background-color: @es_destructive;
+    background-image: none;
+    color: @es_destructive_fg;
+}
+
+button.destructive-action:hover,
+button.destructive-action:active,
+button.destructive-action:checked {
+    background-color: @es_destructive_hover;
+    background-image: none;
+    color: @es_destructive_fg;
+}
+
+button.suggested-action:disabled,
+button.suggested-action:backdrop:disabled,
+button.destructive-action:disabled,
+button.destructive-action:backdrop:disabled {
+    background-color: @es_surface_gray_1;
+    background-image: none;
+    color: @es_ink_gray_4;
+}
+
+button.suggested-action.flat,
+button.suggested-action.flat:backdrop,
+button.destructive-action.flat,
+button.destructive-action.flat:backdrop {
+    background-color: transparent;
+    color: @es_ink_gray_8;
+}
+
+button.destructive-action.flat {
+    color: @es_destructive;
+}
+
+button.link,
+button.link:hover {
+    background: none;
+    padding: 0;
+}
+
+button label:disabled {
+    color: inherit;
+}
+
+/* linked groups keep only the outer corners */
+.linked:not(.vertical) > button,
+.linked:not(.vertical) > entry,
+.linked:not(.vertical) > combobox > box > button.combo,
+.linked.vertical > button,
+.linked.vertical > entry {
+    border: none;
+    border-radius: 0;
+    -gtk-outline-radius: 0;
+}
+
+.linked:not(.vertical) > :first-child,
+.linked:not(.vertical) > combobox:first-child > box > button.combo {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.linked:not(.vertical) > :last-child,
+.linked:not(.vertical) > combobox:last-child > box > button.combo {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.linked:not(.vertical) > :only-child,
+.linked:not(.vertical) > combobox:only-child > box > button.combo {
+    border-radius: 8px;
+}
+
+.linked.vertical > :first-child {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.linked.vertical > :last-child {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/* combobox arrow and menubutton arrow */
+combobox arrow,
+button.popup arrow {
+    min-width: 16px;
+    min-height: 16px;
+    color: @es_ink_gray_5;
+}
+
+/* entries */
+entry {
+    caret-color: @es_ink_gray_8;
+}
+
+entry image {
+    color: @es_ink_gray_5;
+}
+
+entry image.left { margin-right: 6px; }
+entry image.right { margin-left: 6px; }
+
+entry.error {
+    background-color: @es_surface_red_2;
+    color: @es_ink_gray_8;
+}
+
+entry progress {
+    margin: 0 -8px;
+    border-bottom: 2px solid @es_surface_gray_10;
+    background: none;
+}
+
+entry selection,
+entry selection:focus {
+    background-color: @es_accent;
+    color: @es_accent_fg;
+}
+
+/* spin: one filled box with small ghost steppers hugging the value */
+spinbutton:not(.vertical) {
+    padding: 0;
+}
+
+spinbutton:not(.vertical) entry,
+spinbutton:not(.vertical) entry:focus,
+spinbutton:not(.vertical) entry:backdrop {
+    min-width: 0;
+    min-height: 0;
+    padding: 0 4px 0 8px;
+    border: none;
+    background: none;
+    box-shadow: none;
+    outline: none;
+}
+
+spinbutton:not(.vertical) button,
+spinbutton:not(.vertical) button:backdrop,
+spinbutton:not(.vertical) button:backdrop:disabled {
+    min-width: 20px;
+    min-height: 20px;
+    margin: 4px 0;
+    padding: 0;
+    border: none;
+    border-radius: 6px;
+    background-color: transparent;
+    background-image: none;
+    box-shadow: none;
+    color: @es_ink_gray_6;
+}
+
+spinbutton:not(.vertical) button:last-child {
+    margin-right: 4px;
+}
+
+spinbutton:not(.vertical) button:hover {
+    background-color: @es_surface_gray_4;
+    color: @es_ink_gray_8;
+}
+
+spinbutton:not(.vertical) button:active {
+    background-color: @es_surface_gray_5;
+    box-shadow: none;
+}
+
+spinbutton:not(.vertical) button:disabled {
+    background-color: transparent;
+    color: @es_ink_gray_3;
+}
+
+spinbutton.vertical button,
+spinbutton.vertical entry {
+    min-height: 28px;
+    min-width: 28px;
+}
+
+/* checks and radios: frappe checks are gray solid */
+check,
+radio,
+check:backdrop,
+radio:backdrop,
+menu menuitem check,
+menu menuitem radio {
+    min-width: 14px;
+    min-height: 14px;
+    margin: 0 8px 0 0;
+    padding: 0;
+    border: 1px solid @es_outline_gray_4;
+    border-radius: 4px;
+    background-color: @es_surface_base;
+    background-image: none;
+    box-shadow: none;
+    -gtk-icon-shadow: none;
+    color: @es_ink_base;
+}
+
+radio,
+radio:backdrop,
+menu menuitem radio {
+    border-radius: 100px;
+}
+
+check:hover,
+radio:hover {
+    border-color: @es_outline_gray_5;
+    background-image: none;
+}
+
+check:checked,
+radio:checked,
+check:indeterminate,
+radio:indeterminate,
+check:checked:backdrop,
+radio:checked:backdrop,
+check:indeterminate:backdrop,
+radio:indeterminate:backdrop {
+    border-color: @es_surface_gray_10;
+    background-color: @es_surface_gray_10;
+    background-image: none;
+    color: @es_ink_base;
+}
+
+check:disabled,
+radio:disabled {
+    border-color: @es_outline_gray_2;
+    background-color: @es_surface_gray_1;
+}
+
+check:checked:disabled,
+radio:checked:disabled {
+    border-color: @es_surface_gray_4;
+    background-color: @es_surface_gray_4;
+}
+
+/* menu checks have no box just the mark */
+menu menuitem check,
+menu menuitem radio,
+menu menuitem check:hover,
+menu menuitem radio:hover,
+menu menuitem check:checked,
+menu menuitem radio:checked {
+    border: none;
+    background: none;
+    color: inherit;
+}
+
+/* switch: slider takes half the width so the track is 2:1 */
+switch,
+switch:backdrop {
+    min-width: 32px;
+    min-height: 16px;
+    padding: 0;
+    border: none;
+    border-radius: 100px;
+    background-color: @es_surface_gray_4;
+    background-image: none;
+    box-shadow: none;
+    color: transparent;
+    font-size: 0;
+}
+
+switch:hover {
+    background-color: @es_surface_gray_5;
+}
+
+switch:checked,
+switch:checked:backdrop {
+    background-color: @es_surface_gray_10;
+}
+
+switch:checked:hover {
+    background-color: @es_surface_gray_9;
+}
+
+switch:disabled {
+    background-color: @es_surface_gray_2;
+}
+
+switch:checked:disabled {
+    background-color: @es_surface_gray_5;
+}
+
+switch:focus {
+    outline: 2px solid @es_focus;
+}
+
+switch slider,
+switch:hover slider,
+switch:backdrop slider,
+switch:checked slider,
+switch:disabled slider {
+    min-width: 12px;
+    min-height: 12px;
+    margin: 2px;
+    border: none;
+    border-radius: 100px;
+    background-color: @es_light_gray_50;
+    background-image: none;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.20);
+}
+
+/* on track is gray-10 which is near white in dark so the knob inverts with it */
+switch:checked slider,
+switch:checked:backdrop slider {
+    background-color: @es_ink_base;
+}
+
+/* scale */
+scale trough,
+scale trough:backdrop {
+    min-height: 4px;
+    min-width: 4px;
+    border: none;
+    border-radius: 100px;
+    background-color: @es_surface_gray_3;
+    background-image: none;
+    box-shadow: none;
+}
+
+scale highlight,
+scale highlight:backdrop {
+    border: none;
+    border-radius: 100px;
+    background-color: @es_surface_gray_10;
+    background-image: none;
+}
+
+scale fill {
+    border: none;
+    border-radius: 100px;
+    background-color: @es_surface_gray_4;
+}
+
+scale slider,
+scale slider:hover,
+scale slider:active,
+scale slider:backdrop {
+    min-width: 16px;
+    min-height: 16px;
+    margin: -6px;
+    border: none;
+    border-radius: 100px;
+    background-color: @es_light_gray_50;
+    background-image: none;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.18);
+}
+
+scale:disabled highlight {
+    background-color: @es_surface_gray_5;
+}
+
+/* progress and level */
+progressbar trough,
+progressbar progress {
+    min-height: 6px;
+    min-width: 6px;
+    border: none;
+    border-radius: 100px;
+    background-image: none;
+    box-shadow: none;
+}
+
+progressbar trough {
+    background-color: @es_surface_gray_3;
+}
+
+progressbar progress {
+    background-color: @es_surface_gray_10;
+}
+
+progressbar text {
+    color: @es_ink_gray_5;
+    font-size: 12px;
+}
+
+levelbar block {
+    min-height: 6px;
+    border: none;
+    border-radius: 100px;
+    background-color: @es_surface_gray_10;
+    background-image: none;
+    box-shadow: none;
+}
+
+levelbar block.empty {
+    background-color: @es_surface_gray_3;
+}
+
+levelbar block.low { background-color: @es_warning; }
+levelbar block.full { background-color: @es_success; }
+
+spinner {
+    color: @es_ink_gray_5;
+}
+
+/* scrollbars: thin pills */
+scrollbar,
+scrollbar:backdrop {
+    background: none;
+    border: none;
+}
+
+scrollbar trough {
+    background: none;
+    border: none;
+    margin: 2px;
+}
+
+scrollbar slider,
+scrollbar slider:backdrop {
+    min-width: 6px;
+    min-height: 6px;
+    border: none;
+    border-radius: 100px;
+    background-color: @es_surface_gray_5;
+}
+
+scrollbar slider:hover {
+    background-color: @es_surface_gray_6;
+}
+
+scrollbar slider:active {
+    background-color: @es_surface_gray_7;
+}
+
+scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider {
+    min-width: 3px;
+    min-height: 3px;
+    margin: 0;
+    border: none;
+}
+
+scrollbar button {
+    min-width: 0;
+    min-height: 0;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+/* tooltip: frappe's inverted gray chip */
+tooltip,
+tooltip.background,
+tooltip.background.csd {
+    padding: 4px 8px;
+    border: none;
+    border-radius: 8px;
+    background-color: @es_surface_gray_10;
+    color: @es_ink_base;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+tooltip * {
+    color: @es_ink_base;
+}

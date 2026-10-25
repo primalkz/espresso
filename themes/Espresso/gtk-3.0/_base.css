@@ -1,0 +1,47 @@
+/* espresso base for gtk3: same aliases but :focus instead of :focus-visible */
+
+window, dialog, .background {
+    background-color: @es_surface_base;
+    color: @es_ink_gray_8;
+}
+
+*:link, button.link {
+    color: @es_surface_blue_7;
+}
+
+selection, *:selected {
+    background-color: @es_accent;
+    color: @es_accent_fg;
+}
+
+*:focus {
+    outline-color: @es_focus;
+}
+
+label.dim-label, .dim-label {
+    color: @es_ink_gray_6;
+}
+
+separator {
+    background-color: @es_outline_gray_1;
+    min-width: 1px;
+    min-height: 1px;
+}
+
+tooltip {
+    background-color: @es_ink_gray_9;
+    color: @es_surface_base;
+    border: 1px solid alpha(@es_surface_base, 0.10);
+    border-radius: 6px;
+}
+
+headerbar, .titlebar,
+button, entry, spinbutton, combobox, menubutton {
+    background-image: none;
+}
+
+/* gtk3 focus rings are outlines too and 2px is the light token */
+*:focus {
+    outline-width: 2px;
+    outline-offset: 1px;
+}

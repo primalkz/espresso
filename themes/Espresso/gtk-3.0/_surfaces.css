@@ -1,0 +1,637 @@
+/* surfaces for gtk3: headerbar popovers menus menubar and lists */
+
+headerbar,
+headerbar:backdrop,
+.titlebar:not(headerbar),
+.titlebar:backdrop:not(headerbar) {
+    min-height: 44px;
+    padding: 0 8px;
+    border: none;
+    border-bottom: 1px solid @es_outline_gray_1;
+    border-radius: 0;
+    background-color: @es_surface_base;
+    background-image: none;
+    box-shadow: none;
+    color: @es_ink_gray_8;
+}
+
+headerbar:backdrop,
+.titlebar:backdrop:not(headerbar) {
+    color: @es_ink_gray_6;
+}
+
+/* plain csd titlebars like thunar. adwaita outranks us when focused and loses when not so pin both */
+headerbar.default-decoration,
+headerbar.default-decoration:backdrop,
+.default-decoration.titlebar:not(headerbar),
+.default-decoration.titlebar:backdrop:not(headerbar) {
+    min-height: 28px;
+    padding: 4px 8px;
+}
+
+headerbar.default-decoration button.titlebutton,
+headerbar.default-decoration button.titlebutton:backdrop {
+    margin: 0;
+}
+
+headerbar .title {
+    font-weight: 600;
+}
+
+headerbar .subtitle {
+    font-size: 12px;
+    color: @es_ink_gray_5;
+}
+
+headerbar entry,
+headerbar spinbutton,
+headerbar button {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+headerbar switch {
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+/* headerbar buttons are ghosts */
+headerbar button:not(.suggested-action):not(.destructive-action),
+headerbar button:not(.suggested-action):not(.destructive-action):backdrop {
+    background-color: transparent;
+}
+
+headerbar button:not(.suggested-action):not(.destructive-action):hover {
+    background-color: @es_surface_gray_2;
+}
+
+headerbar button:not(.suggested-action):not(.destructive-action):active,
+headerbar button:not(.suggested-action):not(.destructive-action):checked {
+    background-color: @es_surface_gray_3;
+}
+
+/* window buttons: plain glyph with a small circle only on hover */
+button.titlebutton,
+button.titlebutton:backdrop,
+headerbar.default-decoration button.titlebutton {
+    min-width: 24px;
+    min-height: 24px;
+    margin: 0;
+    padding: 0;
+    border-radius: 100px;
+    -gtk-outline-radius: 100px;
+    background-color: transparent;
+    color: @es_ink_gray_6;
+}
+
+button.titlebutton:hover {
+    background-color: @es_surface_gray_3;
+    color: @es_ink_gray_8;
+}
+
+button.titlebutton:active {
+    background-color: @es_surface_gray_4;
+}
+
+/* popovers: one borderless card with 12px radius and p-1 */
+popover.background,
+popover.background:backdrop {
+    padding: 4px;
+    border: none;
+    border-radius: 12px;
+    background-color: @es_surface_elevation_2;
+    background-image: none;
+    box-shadow: 0 0 0 1px @es_outline_elevation_2, 0 4px 12px -2px rgba(0, 0, 0, 0.14);
+    color: @es_ink_gray_8;
+}
+
+popover.background > list,
+popover.background > .view,
+popover.background > toolbar {
+    background: none;
+    border: none;
+}
+
+popover.background separator {
+    margin: 4px 0;
+    background-color: @es_outline_gray_1;
+}
+
+modelbutton.flat,
+.menuitem.button.flat {
+    min-height: 28px;
+    padding: 0 8px;
+    border-radius: 8px;
+    -gtk-outline-radius: 8px;
+    background: none;
+    color: @es_ink_gray_8;
+}
+
+modelbutton.flat:hover,
+.menuitem.button.flat:hover {
+    background-color: @es_surface_gray_3;
+}
+
+modelbutton.flat:active {
+    background-color: @es_surface_gray_4;
+}
+
+modelbutton.flat:disabled {
+    color: @es_ink_gray_4;
+}
+
+modelbutton.flat image {
+    margin-right: 8px;
+    color: @es_ink_gray_6;
+}
+
+/* real gtkmenu: context menus combobox lists and menubar drops */
+.csd.popup decoration {
+    border-radius: 12px;
+    box-shadow: 0 0 0 1px @es_outline_elevation_2, 0 4px 12px -2px rgba(0, 0, 0, 0.14);
+}
+
+menu,
+.menu,
+.context-menu,
+.csd menu,
+.csd .menu,
+.csd .context-menu,
+menu:backdrop,
+.menu:backdrop,
+.context-menu:backdrop {
+    margin: 0;
+    padding: 4px;
+    border: none;
+    border-radius: 12px;
+    background-color: @es_surface_elevation_2;
+    color: @es_ink_gray_8;
+}
+
+menu menuitem,
+.menu menuitem,
+.context-menu menuitem {
+    min-height: 28px;
+    min-width: 40px;
+    padding: 0 8px;
+    border-radius: 8px;
+    color: @es_ink_gray_8;
+    text-shadow: none;
+}
+
+menu menuitem:hover,
+.menu menuitem:hover,
+.context-menu menuitem:hover,
+menu menuitem:backdrop:hover {
+    background-color: @es_surface_gray_3;
+    color: @es_ink_gray_8;
+}
+
+menu menuitem:backdrop,
+.menu menuitem:backdrop {
+    background-color: transparent;
+    color: @es_ink_gray_8;
+}
+
+menu menuitem:disabled,
+.menu menuitem:disabled,
+menu menuitem:disabled:backdrop {
+    color: @es_ink_gray_4;
+}
+
+menu menuitem image {
+    color: @es_ink_gray_6;
+}
+
+menu menuitem arrow {
+    min-width: 16px;
+    min-height: 16px;
+    margin-left: 8px;
+    color: @es_ink_gray_5;
+}
+
+menu separator,
+.menu separator {
+    margin: 4px 0;
+    background-color: @es_outline_gray_1;
+}
+
+menuitem accelerator {
+    margin-left: 16px;
+    color: @es_ink_gray_5;
+}
+
+menu > arrow,
+.menu > arrow {
+    min-height: 16px;
+    border: none;
+    background: none;
+    color: @es_ink_gray_5;
+}
+
+/* menubar */
+menubar,
+.menubar {
+    padding: 2px 4px;
+    border-bottom: 1px solid @es_outline_gray_1;
+    background-color: @es_surface_base;
+    box-shadow: none;
+}
+
+menubar > menuitem,
+.menubar > menuitem {
+    min-height: 20px;
+    padding: 4px 8px;
+    border-radius: 8px;
+    color: @es_ink_gray_8;
+}
+
+menubar > menuitem:hover,
+.menubar > menuitem:hover {
+    background-color: @es_surface_gray_3;
+    box-shadow: none;
+    color: @es_ink_gray_8;
+}
+
+menubar > menuitem:disabled {
+    color: @es_ink_gray_4;
+}
+
+menubar .csd.popup decoration {
+    border-radius: 12px;
+}
+
+/* lists */
+list,
+list:backdrop {
+    background-color: @es_surface_base;
+    color: @es_ink_gray_8;
+    border-color: @es_outline_gray_1;
+}
+
+list > row {
+    min-height: 28px;
+    padding: 0 8px;
+}
+
+row.activatable:hover {
+    background-color: @es_surface_gray_2;
+}
+
+row.activatable:active {
+    background-color: @es_surface_gray_3;
+    box-shadow: none;
+}
+
+row:selected,
+list > row:selected,
+row:selected:backdrop {
+    background-color: @es_surface_gray_3;
+    color: @es_ink_gray_8;
+    box-shadow: none;
+}
+
+row:selected button.flat:not(:active):not(:checked):not(:hover):not(disabled) {
+    color: @es_ink_gray_8;
+}
+
+row:disabled {
+    color: @es_ink_gray_4;
+}
+
+/* notebook and tabs */
+notebook > header {
+    background-color: @es_surface_gray_1;
+    background-image: none;
+    border: none;
+    border-bottom: 1px solid @es_outline_gray_1;
+    padding: 4px;
+    box-shadow: none;
+}
+
+notebook > header > tabs > tab {
+    background-color: transparent;
+    background-image: none;
+    min-height: 24px;
+    padding: 6px 12px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    color: @es_ink_gray_5;
+    font-weight: 500;
+    box-shadow: none;
+    transition: background-color 120ms ease, border-color 120ms ease, color 120ms ease;
+}
+
+notebook > header.top > tabs > tab,
+notebook > header.bottom > tabs > tab,
+notebook > header.left > tabs > tab,
+notebook > header.right > tabs > tab {
+    padding: 6px 12px;
+}
+
+notebook > header.top > tabs > tab:hover,
+notebook > header.bottom > tabs > tab:hover,
+notebook > header.left > tabs > tab:hover,
+notebook > header.right > tabs > tab:hover {
+    background-color: @es_surface_gray_3;
+    color: @es_ink_gray_8;
+    box-shadow: none;
+}
+
+notebook > header > tabs > tab:hover {
+    background-color: @es_surface_gray_3;
+    color: @es_ink_gray_8;
+    box-shadow: none;
+}
+
+notebook > header.top > tabs > tab:checked,
+notebook > header.bottom > tabs > tab:checked,
+notebook > header.left > tabs > tab:checked,
+notebook > header.right > tabs > tab:checked {
+    background-color: @es_surface_base;
+    border-color: @es_outline_gray_1;
+    color: @es_ink_gray_8;
+    box-shadow: none;
+}
+
+notebook > header > tabs > tab:checked {
+    background-color: @es_surface_base;
+    border-color: @es_outline_gray_1;
+    color: @es_ink_gray_8;
+    box-shadow: none;
+}
+
+notebook > header > tabs > tab:checked:hover {
+    background-color: @es_surface_base;
+    border-color: @es_outline_gray_2;
+    box-shadow: none;
+}
+
+notebook > header > tabs > tab:disabled {
+    background-color: transparent;
+    border-color: transparent;
+    color: @es_ink_gray_3;
+}
+
+notebook > header > tabs > arrow {
+    border-radius: 6px;
+    color: @es_ink_gray_5;
+}
+
+notebook > header > tabs > arrow:hover:not(:active):not(:backdrop) {
+    background-color: @es_surface_gray_3;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+notebook > stack:not(:only-child) {
+    background-color: @es_surface_base;
+}
+
+/* stack switcher */
+stackswitcher {
+    background-color: transparent;
+}
+
+stackswitcher button {
+    background-color: transparent;
+    background-image: none;
+    border-color: transparent;
+    border-radius: 6px;
+    min-height: 24px;
+    padding: 2px 10px;
+    color: @es_ink_gray_8;
+    font-weight: 500;
+    box-shadow: none;
+    transition: background-color 120ms ease, border-color 120ms ease, color 120ms ease;
+}
+
+stackswitcher button:hover {
+    background-color: @es_surface_gray_2;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+stackswitcher button:checked {
+    background-color: @es_surface_elevation_1;
+    background-image: none;
+    border-color: @es_outline_gray_1;
+    color: @es_ink_gray_8;
+    box-shadow: none;
+}
+
+stackswitcher button:disabled {
+    background-color: transparent;
+    border-color: transparent;
+    color: @es_ink_gray_3;
+}
+
+/* bars */
+searchbar > revealer > box {
+    background-color: @es_surface_gray_1;
+    background-image: none;
+    border: none;
+    border-bottom: 1px solid @es_outline_gray_1;
+    padding: 6px;
+    box-shadow: none;
+    transition: background-color 120ms ease, border-color 120ms ease;
+}
+
+searchbar > revealer > box:backdrop {
+    background-color: @es_surface_gray_1;
+    border-bottom-color: @es_outline_gray_1;
+    box-shadow: none;
+}
+
+actionbar > revealer > box {
+    background-color: @es_surface_gray_1;
+    background-image: none;
+    border: none;
+    border-top: 1px solid @es_outline_gray_1;
+    padding: 6px;
+    box-shadow: none;
+}
+
+toolbar,
+.toolbar {
+    background-color: @es_surface_gray_1;
+    background-image: none;
+    border: 1px solid @es_outline_gray_1;
+    padding: 6px;
+    box-shadow: none;
+}
+
+/* toolbar controls are flat and borderless */
+toolbar button,
+.toolbar button {
+    background-color: transparent;
+    background-image: none;
+    border-color: transparent;
+    box-shadow: none;
+    transition: background-color 120ms ease, border-color 120ms ease, color 120ms ease;
+}
+
+toolbar button:hover,
+.toolbar button:hover {
+    background-color: @es_surface_gray_2;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+toolbar button:active,
+toolbar button:checked,
+.toolbar button:active,
+.toolbar button:checked {
+    background-color: @es_surface_gray_3;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+toolbar button:disabled,
+.toolbar button:disabled {
+    background-color: transparent;
+    border-color: transparent;
+    color: @es_ink_gray_3;
+    box-shadow: none;
+}
+
+toolbar.horizontal > separator,
+.toolbar.horizontal > separator {
+    margin: 4px 0;
+}
+
+toolbar.vertical > separator,
+.toolbar.vertical > separator {
+    margin: 0 4px;
+}
+
+statusbar {
+    background-color: @es_surface_gray_1;
+    border-top: 1px solid @es_outline_gray_1;
+    padding: 6px 10px;
+    color: @es_ink_gray_5;
+    font-size: 12px;
+}
+
+/* paned */
+paned > separator {
+    background-color: @es_outline_gray_1;
+    background-image: none;
+    min-width: 1px;
+    min-height: 1px;
+    border: none;
+    box-shadow: none;
+}
+
+paned > separator.wide {
+    background-color: @es_surface_gray_1;
+    background-image: none;
+    min-width: 5px;
+    min-height: 5px;
+    border: none;
+}
+
+paned > separator:hover {
+    background-color: @es_outline_gray_2;
+}
+
+paned > separator:selected {
+    background-color: @es_accent;
+}
+
+/* frame */
+frame,
+.frame {
+    background-color: @es_surface_elevation_1;
+    border-radius: 12px;
+}
+
+/* gtk3 paints the frame outline on the child border node */
+frame > border,
+frame > border:backdrop {
+    border: 1px solid @es_outline_gray_1;
+    border-radius: 12px;
+    box-shadow: none;
+}
+
+frame > label {
+    color: @es_ink_gray_5;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 4px;
+}
+
+/* expander */
+expander {
+    color: @es_ink_gray_5;
+}
+
+expander:disabled {
+    color: @es_ink_gray_3;
+}
+
+expander title {
+    border-radius: 6px;
+    padding: 4px 6px;
+    transition: background-color 120ms ease, color 120ms ease;
+}
+
+expander title:hover {
+    background-color: @es_surface_gray_2;
+}
+
+/* infobar */
+infobar > revealer > box {
+    padding: 8px;
+}
+
+/* app notification stays dark in both modes */
+.app-notification {
+    background-color: @es_ink_gray_9;
+    background-image: none;
+    color: @es_surface_base;
+    border: none;
+    border-radius: 12px;
+    padding: 8px 12px;
+    box-shadow: inset 0px 0.25px 1.5px 0px #ffffff29, 0px 0px 1.5px 0px #00000029, 0px 2px 5px 0px #00000024;  /* elevation base */
+}
+
+.app-notification button {
+    background-color: transparent;
+    background-image: none;
+    border-color: transparent;
+    border-radius: 6px;
+    color: @es_surface_base;
+    box-shadow: none;
+    transition: background-color 120ms ease, color 120ms ease;
+}
+
+.app-notification button:hover {
+    background-color: alpha(@es_surface_base, 0.12);
+    border-color: transparent;
+}
+
+.app-notification button:active {
+    background-color: alpha(@es_surface_base, 0.20);
+    border-color: transparent;
+}
+
+.app-notification button:disabled {
+    background-color: transparent;
+    border-color: transparent;
+    color: alpha(@es_surface_base, 0.45);
+}
+
+/* focus ring on surface widgets comes from _base */
+row:focus,
+modelbutton:focus,
+notebook > header > tabs > tab:focus,
+stackswitcher button:focus {
+    outline-color: @es_focus;
+    outline-style: solid;
+}
+
+/* tooltips sit on the sm elevation */
+tooltip {
+    box-shadow: inset 0px 0.25px 1.5px 0px #ffffff29, 0px 0px 1px 0px #00000033, 0px 1px 3px 0px #00000024;  /* elevation sm */
+}
