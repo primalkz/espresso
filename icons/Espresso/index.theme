@@ -1,0 +1,12 @@
+[Icon Theme]
+Name=Espresso
+Comment=Lucide symbolic icons the way frappe-ui draws them, app icons from the apps themselves
+Inherits=Adwaita,hicolor
+Directories=scalable/symbolic
+
+[scalable/symbolic]
+Context=Actions
+Size=16
+MinSize=8
+MaxSize=512
+Type=Scalable
